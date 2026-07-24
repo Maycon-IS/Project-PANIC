@@ -25,10 +25,13 @@ public class PlayerController : MonoBehaviour
 
     private SpriteRenderer sr;
     private Rigidbody2D rb;
+    private IInputProvider inputProvider;
+
     private float moveInput;
     private bool jumpRequested;
     private bool isGrounded;
     private float defaultGravityScale;
+    public bool IsGrounded => isGrounded;
 
     private bool dashRequested;
     private bool isDashing;
@@ -40,12 +43,13 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        inputProvider = GetComponent<IInputProvider>();
         defaultGravityScale = rb.gravityScale; // guarda o valor original definido no Inspector
     }
 
     private void Update()
     {
-        ReadInputMoviment();
+        Moviment();
         FlipSprite();
     }
 
@@ -75,17 +79,17 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void ReadInputMoviment()
+    private void Moviment()
     {
         // Input do Movimento
-        moveInput = Input.GetAxisRaw("Horizontal");
+        moveInput = inputProvider.GetHorizontal();
 
         // Input do Pulo
-        if (Input.GetButtonDown("Jump"))
+        if (inputProvider.JumpPressed())
             jumpRequested = true; // buffer simples até o próximo FixedUpdate
 
         // Input do Dash
-        if (Input.GetButtonDown("Fire3") || Input.GetKeyDown(KeyCode.R))
+        if (inputProvider.DashPressed())
             dashRequested = true;
 
         // Posição do Ground

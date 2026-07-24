@@ -1,19 +1,25 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BombManager : MonoBehaviour
 {
     public static BombManager Instance { get; private set; }
+    public IReadOnlyList<BombCarrier> ActivePlayers => allPlayers;
 
     [Header("Configuração da Bomba")]
     [SerializeField] private float bombTimer = 8f;
     [SerializeField] private float transferImmunity = 0.3f;
+    [SerializeField] private float reassignDelay = 3f; // tempo de espera após eliminação
 
     private readonly List<BombCarrier> allPlayers = new List<BombCarrier>();
     private BombCarrier currentCarrier;
     private BombCarrier lastCarrier;
+    
     private float timeRemaining;
     private float immunityRemaining;
+
+    private float delayRemaining;
 
     private void Awake()
     {
@@ -24,6 +30,9 @@ public class BombManager : MonoBehaviour
     {
         Invoke(nameof(AssignBombToRandomPlayer), 0.1f);
         // pequeno delay pra garantir que todos os BombCarrier já rodaram seu Start() e se registraram
+        MainGameView.Instance?.UpdateTimeBomb(bombTimer);
+        MainGameView.Instance?.UpdateDelayBomb(0f);
+
     }
 
     private void Update()
@@ -31,9 +40,20 @@ public class BombManager : MonoBehaviour
         if (immunityRemaining > 0f)
             immunityRemaining -= Time.deltaTime;
 
-        if (currentCarrier == null) return;
+        if (currentCarrier == null)
+        {
+            if (delayRemaining > 0f) {
+                delayRemaining -= Time.deltaTime;
+                MainGameView.Instance?.UpdateDelayBomb(delayRemaining); 
+            }
+
+            return;
+        }
 
         timeRemaining -= Time.deltaTime;
+
+        MainGameView.Instance?.UpdateTimeBomb(timeRemaining);
+
         if (timeRemaining <= 0f)
             Explode();
     }
@@ -61,6 +81,9 @@ public class BombManager : MonoBehaviour
         currentCarrier = to;
         timeRemaining = bombTimer;
         immunityRemaining = transferImmunity;
+
+        MainGameView.Instance?.UpdateTimeBomb(timeRemaining);
+
     }
 
     private void Explode()
@@ -75,18 +98,24 @@ public class BombManager : MonoBehaviour
 
         if (CheckWinCondition()) return;
 
-        AssignBombToRandomPlayer();
+        delayRemaining = reassignDelay;
+
+        Invoke(nameof(AssignBombToRandomPlayer), reassignDelay);
     }
 
     private void AssignBombToRandomPlayer()
     {
         if (allPlayers.Count == 0) return;
 
-        int index = Random.Range(0, allPlayers.Count);
+        int index = UnityEngine.Random.Range(0, allPlayers.Count);
         currentCarrier = allPlayers[index];
         currentCarrier.SetBombState(true);
         timeRemaining = bombTimer;
         lastCarrier = null;
+
+        MainGameView.Instance?.UpdateTimeBomb(timeRemaining);
+        MainGameView.Instance?.UpdateDelayBomb(0f);
+
     }
 
     private bool CheckWinCondition()
