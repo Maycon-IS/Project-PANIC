@@ -7,10 +7,10 @@ public class BombManager : MonoBehaviour
     public static BombManager Instance { get; private set; }
     public IReadOnlyList<BombCarrier> ActivePlayers => allPlayers;
 
-    [Header("Configuração da Bomba")]
+    [Header("Configuracao da Bomba")]
     [SerializeField] private float bombTimer = 8f;
     [SerializeField] private float transferImmunity = 0.3f;
-    [SerializeField] private float reassignDelay = 3f; // tempo de espera após eliminação
+    [SerializeField] private float reassignDelay = 3f; // tempo de espera aps eliminao
 
     private readonly List<BombCarrier> allPlayers = new List<BombCarrier>();
     private BombCarrier currentCarrier;
@@ -29,7 +29,7 @@ public class BombManager : MonoBehaviour
     private void Start()
     {
         Invoke(nameof(AssignBombToRandomPlayer), 0.1f);
-        // pequeno delay pra garantir que todos os BombCarrier já rodaram seu Start() e se registraram
+        // pequeno delay pra garantir que todos os BombCarrier jï¿½ rodaram seu Start() e se registraram
         MainGameView.Instance?.UpdateTimeBomb(bombTimer);
         MainGameView.Instance?.UpdateDelayBomb(0f);
 
@@ -94,7 +94,7 @@ public class BombManager : MonoBehaviour
 
         PlayerElimination elimination = eliminated.GetComponent<PlayerElimination>();
         if (elimination != null)
-            elimination.Eliminate();
+            elimination.Kill();
 
         if (CheckWinCondition()) return;
 

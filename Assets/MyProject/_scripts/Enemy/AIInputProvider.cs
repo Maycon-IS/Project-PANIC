@@ -5,15 +5,15 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
 {
     private enum AIState { Wander, Chase, Flee }
 
-    [Header("Decisão")]
+    [Header("Decisao")]
     [SerializeField] private float decisionInterval = 0.2f;
     [SerializeField] private float awarenessRadius = 6f;
 
-    [Header("Obstáculos e Chão")]
+    [Header("Obstaculos e Chao")]
     [SerializeField] private float jumpCheckDistance = 0.6f;
-    [SerializeField] private float groundAheadOffset = 0.5f;   // o quão à frente checa o chão
-    [SerializeField] private float groundCheckDistance = 1.5f; // até onde desce o raio, procurando chão
-    [SerializeField] private LayerMask obstacleLayer;          // usada tanto pra parede quanto pra chão
+    [SerializeField] private float groundAheadOffset = 0.5f;   // o quï¿½o ï¿½ frente checa o chï¿½o
+    [SerializeField] private float groundCheckDistance = 1.5f; // atï¿½ onde desce o raio, procurando chï¿½o
+    [SerializeField] private LayerMask obstacleLayer;          // usada tanto pra parede quanto pra chï¿½o
 
     [Header("Wander")]
     [SerializeField] private float wanderRadius = 5f;
@@ -21,9 +21,9 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
 
     [Header("Dash da IA")]
     [SerializeField] private float fleeDashDistance = 2f;   // perigo muito perto -> dash pra fugir
-    [SerializeField] private float chaseDashDistance = 3f;  // alvo a média distância -> dash pra alcançar
+    [SerializeField] private float chaseDashDistance = 3f;  // alvo a mï¿½dia distï¿½ncia -> dash pra alcanï¿½ar
 
-    [Header("Anti-Obstáculo (Stuck Detection)")]
+    [Header("Anti-Obstaculo (Stuck Detection)")]
     [SerializeField] private float stuckCheckInterval = 1f;
     [SerializeField] private float stuckMovementThreshold = 0.3f;
     [SerializeField] private float targetBlacklistDuration = 3f;
@@ -68,7 +68,7 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
             decisionTimer = decisionInterval;
         }
 
-        CheckJumpNeeded(); // todo frame, pra não perder o timing do pulo
+        CheckJumpNeeded(); // todo frame, pra nï¿½o perder o timing do pulo
         UpdateBlacklistTimer();
         CheckIfStuck();
     }
@@ -105,7 +105,7 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
                 break;
 
             case AIState.Chase:
-                // só faz sentido dashar se ainda não está colado no alvo (senão desperdiça o dash)
+                // sï¿½ faz sentido dashar se ainda nï¿½o estï¿½ colado no alvo (senï¿½o desperdiï¿½a o dash)
                 dashDecision = lastTargetDistance > 1f && lastTargetDistance <= chaseDashDistance;
                 break;
 
@@ -142,7 +142,7 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
         foreach (BombCarrier candidate in BombManager.Instance.ActivePlayers)
         {
             if (candidate == myBombCarrier) continue;
-            if (candidate == blacklistedTarget) continue; // ignora quem travou até o cooldown acabar
+            if (candidate == blacklistedTarget) continue; // ignora quem travou atï¿½ o cooldown acabar
             if (!myBombCarrier.HasBomb && !candidate.HasBomb) continue;
 
             float dist = Vector2.Distance(transform.position, candidate.transform.position);
@@ -180,8 +180,8 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
 
         if (gapAhead)
         {
-            // Só arrisca pular o buraco se realmente tem motivo (perseguindo ou fugindo).
-            // Vagueando, prefere trocar de destino a se jogar num precipício.
+            // Sï¿½ arrisca pular o buraco se realmente tem motivo (perseguindo ou fugindo).
+            // Vagueando, prefere trocar de destino a se jogar num precipï¿½cio.
             if (currentState == AIState.Wander)
             {
                 PickNewWanderTarget();
@@ -230,7 +230,7 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
     {
         Vector2 checkOrigin = (Vector2)transform.position + direction * groundAheadOffset;
         RaycastHit2D groundHit = Physics2D.Raycast(checkOrigin, Vector2.down, groundCheckDistance, obstacleLayer);
-        return groundHit.collider == null; // se não achou chão, é buraco
+        return groundHit.collider == null; // se nï¿½o achou chï¿½o, ï¿½ buraco
     }
 
     public float GetHorizontal() => horizontalDecision;

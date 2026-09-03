@@ -18,8 +18,6 @@ public class BombCarrier : MonoBehaviour
 
     private void Start()
     {
-        // Start (não Awake) garante que BombManager.Instance já existe,
-        // já que todo Awake da cena roda antes de qualquer Start
         BombManager.Instance.RegisterPlayer(this);
     }
 

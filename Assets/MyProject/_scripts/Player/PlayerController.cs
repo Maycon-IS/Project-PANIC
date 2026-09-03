@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             if (jumpRequested && isGrounded)
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-            ApplyFallGravity(); //Aplicação da gravidade
+            ApplyFallGravity(); //Aplicacao da gravidade
         }
 
         jumpRequested = false;
@@ -86,13 +86,13 @@ public class PlayerController : MonoBehaviour
 
         // Input do Pulo
         if (inputProvider.JumpPressed())
-            jumpRequested = true; // buffer simples até o próximo FixedUpdate
+            jumpRequested = true; // buffer simples ata o proximo FixedUpdate
 
         // Input do Dash
         if (inputProvider.DashPressed())
             dashRequested = true;
 
-        // Posição do Ground
+        // Posiï¿½ï¿½o do Ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
     private void ApplyFallGravity()
     {
         if (rb.velocity.y < 0f)
-            rb.gravityScale = defaultGravityScale * fallGravityMultiplier; // Caindo: aumenta a gravidade para uma descida mais rápida e "seca"
+            rb.gravityScale = defaultGravityScale * fallGravityMultiplier; // Caindo: aumenta a gravidade para uma descida mais rï¿½pida e "seca"
         else
             rb.gravityScale = defaultGravityScale;  // Subindo ou parado: gravidade normal
     }
@@ -125,16 +125,16 @@ public class PlayerController : MonoBehaviour
         if (dashCooldownRemaining > 0f)
             dashCooldownRemaining -= Time.fixedDeltaTime;
 
-        // Inicia o dash se solicitado e disponível
+        // Inicia o dash se solicitado e disponivel
         if (dashRequested && !isDashing && dashCooldownRemaining <= 0f)
         {
             isDashing = true;
             dashTimeRemaining = dashDuration;
             dashCooldownRemaining = dashCooldown;
-            rb.gravityScale = 0f; // sem gravidade durante o dash, pra trajetória reta
+            rb.gravityScale = 0f; // sem gravidade durante o dash, pra trajetï¿½ria reta
         }
 
-        // Controla a duração do dash em andamento
+        // Controla a duraï¿½ï¿½o do dash em andamento
         if (isDashing)
         {
             dashTimeRemaining -= Time.fixedDeltaTime;
