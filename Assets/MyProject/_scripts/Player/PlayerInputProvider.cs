@@ -6,7 +6,7 @@ public class PlayerInputProvider : MonoBehaviour, IInputProvider
 {
     public float GetHorizontal() => Input.GetAxisRaw("Horizontal");
     public bool JumpPressed() => Input.GetButtonDown("Jump");
-    public bool DashPressed() => Input.GetButtonDown("Dash") || Input.GetButtonDown("Fire3") || Input.GetKeyDown(KeyCode.R);
+    public bool DashPressed() => Input.GetButtonDown("Dash") || Input.GetButtonDown("Fire3") || Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Q);
 }
 
 public interface IInputProvider

@@ -8,7 +8,7 @@ public class PlayerElimination : MonoBehaviour
 
     public void Kill()
     {
-        gameObject.SetActive(false);
         OnPlayerEliminated?.Invoke(gameObject);
+        gameObject.SetActive(false);
     }
 }
