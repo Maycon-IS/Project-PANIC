@@ -54,6 +54,9 @@ public class ArenaEventManager : MonoBehaviour
         {
             int index = Random.Range(0, _events.Count);
             _currentEvent = _events[index];
+
+            Debug.Log($"[ArenaEventManager] Evento sorteado: {_currentEvent.EventName}");
+
             _currentEvent.Activate();
         }
     }

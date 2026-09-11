@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hazard_Spikes
   m_EditorClassIdentifier: 
   hazardName: 
-  visual: {fileID: 0}
+  visual: {fileID: 21300000, guid: ff458b410edaf6345a1ccb408567b936, type: 3}
   tint: {r: 0.25057605, g: 0.5, b: 0.20518869, a: 1}
   behavior: 0
   warningTime: 1.5

@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class HazardEvent : MonoBehaviour, IArenaEvent
 {
-    [Header("Slots físicos na arena")]
+    [Header("Slots fisicos na arena")]
     [SerializeField] private List<HazardZone> hazardZones;
 
-    [Header("Tipos de hazard disponíveis (pool)")]
+    [Header("Tipos de hazard disponiveis (pool)")]
     [SerializeField] private List<HazardDefinition> hazardPool;
 
     public string EventName => "Hazard";

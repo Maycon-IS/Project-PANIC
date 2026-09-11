@@ -8,7 +8,7 @@ public class HazardZone : MonoBehaviour
     private HazardDefinition _currentDefinition;
 
     private float _timer;
-    private bool _triggered; // já ficou letal / já quebrou
+    private bool _triggered; 
 
     private void Awake()
     {
@@ -17,9 +17,12 @@ public class HazardZone : MonoBehaviour
         ResetZone();
     }
 
-    /// Configura este slot para se tornar um hazard específico.
+    /// Configura este slot para se tornar um hazard .
     public void Configure(HazardDefinition definition)
     {
+        gameObject.SetActive(true); 
+        EnsureReferences();
+
         _currentDefinition = definition;
         _timer = 0f;
         _triggered = false;
@@ -31,9 +34,17 @@ public class HazardZone : MonoBehaviour
         // Ponto-chave: o tipo de collider depende do comportamento escolhido.
         _collider.isTrigger = definition.behavior == HazardBehavior.InstantKillTrigger;
         _collider.enabled = definition.behavior == HazardBehavior.BreakableGround;
-        // Plataforma já começa sólida (pisável); Lava/Espinho começam "frios" (ver Tick).
 
         gameObject.SetActive(true);
+
+         Debug.Log($"[HazardZone] '{gameObject.name}' configurado como '{definition.hazardName}'. " +
+               $"IsTrigger={_collider.isTrigger}, ColliderEnabled={_collider.enabled}");
+    }
+
+    private void EnsureReferences()
+    {
+        if (_renderer == null) _renderer = GetComponent<SpriteRenderer>();
+        if (_collider == null) _collider = GetComponent<Collider2D>();
     }
 
     public void ResetZone()
@@ -59,7 +70,7 @@ public class HazardZone : MonoBehaviour
                 break;
 
             case HazardBehavior.BreakableGround:
-                _collider.enabled = false; // chão some, jogador cai
+                _collider.enabled = false; // chï¿½o some, jogador cai
                 _renderer.enabled = false;
                 break;
         }
