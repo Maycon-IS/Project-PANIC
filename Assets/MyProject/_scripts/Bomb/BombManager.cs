@@ -11,6 +11,7 @@ public class BombManager : MonoBehaviour
     [SerializeField] private float bombTimer = 8f;
     [SerializeField] private float transferImmunity = 0.3f;
     [SerializeField] private float reassignDelay = 3f; // tempo de espera aps eliminao
+    [SerializeField] private float transferTimeBonus = 1f;
 
     private readonly List<BombCarrier> allPlayers = new List<BombCarrier>();
     private BombCarrier currentCarrier;
@@ -79,7 +80,7 @@ public class BombManager : MonoBehaviour
 
         lastCarrier = from;
         currentCarrier = to;
-        timeRemaining = bombTimer;
+        timeRemaining += transferTimeBonus;
         immunityRemaining = transferImmunity;
 
         MainGameView.Instance?.UpdateTimeBomb(timeRemaining);
@@ -115,7 +116,6 @@ public class BombManager : MonoBehaviour
 
         MainGameView.Instance?.UpdateTimeBomb(timeRemaining);
         MainGameView.Instance?.UpdateDelayBomb(0f);
-
     }
 
     private bool CheckWinCondition()
