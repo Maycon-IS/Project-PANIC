@@ -22,9 +22,19 @@ public class BombManager : MonoBehaviour
 
     private float delayRemaining;
 
+    private void OnEnable()
+    {
+        PlayerElimination.OnPlayerEliminated += HandlePlayerEliminated;
+    }
+
+    private void OnDisable()
+    {
+        PlayerElimination.OnPlayerEliminated -= HandlePlayerEliminated;
+    }
     private void Awake()
     {
         Instance = this;
+
     }
 
     private void Start()
@@ -90,18 +100,37 @@ public class BombManager : MonoBehaviour
     private void Explode()
     {
         BombCarrier eliminated = currentCarrier;
-        allPlayers.Remove(eliminated);
-        currentCarrier = null;
 
         PlayerElimination elimination = eliminated.GetComponent<PlayerElimination>();
         if (elimination != null)
             elimination.Kill();
+    }
+    
+    private void HandlePlayerEliminated(GameObject eliminatedGO)
+    {
+        BombCarrier carrier = eliminatedGO.GetComponent<BombCarrier>();
+        if (carrier == null) return;           // morreu algo que não é jogador com bomba
+        if (!allPlayers.Contains(carrier)) return; // já tratado antes (evita duplicar)
 
-        if (CheckWinCondition()) return;
+        bool wasCurrentCarrier = (carrier == currentCarrier);
 
-        delayRemaining = reassignDelay;
+        allPlayers.Remove(carrier);
 
-        Invoke(nameof(AssignBombToRandomPlayer), reassignDelay);
+        if (wasCurrentCarrier)
+        {
+            currentCarrier = null;
+            lastCarrier = null;
+
+            if (CheckWinCondition()) return;
+
+            delayRemaining = reassignDelay;
+            MainGameView.Instance?.UpdateDelayBomb(delayRemaining);
+            Invoke(nameof(AssignBombToRandomPlayer), reassignDelay);
+        }
+        else
+        {
+            CheckWinCondition(); // morreu sem bomba (ex: lava pegou outro jogador) — ainda pode encerrar a partida
+        }
     }
 
     private void AssignBombToRandomPlayer()
