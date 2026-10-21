@@ -19,8 +19,16 @@ public class BombManager : MonoBehaviour
     
     private float timeRemaining;
     private float immunityRemaining;
-
     private float delayRemaining;
+
+    // Eventos estáticos dedicados ao estado da rodada
+    public static event Action OnRoundEnded;
+    public static event Action OnRoundStarted;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void OnEnable()
     {
@@ -31,16 +39,10 @@ public class BombManager : MonoBehaviour
     {
         PlayerElimination.OnPlayerEliminated -= HandlePlayerEliminated;
     }
-    private void Awake()
-    {
-        Instance = this;
-
-    }
 
     private void Start()
     {
         Invoke(nameof(AssignBombToRandomPlayer), 0.1f);
-        // pequeno delay pra garantir que todos os BombCarrier j� rodaram seu Start() e se registraram
         MainGameView.Instance?.UpdateTimeBomb(bombTimer);
         MainGameView.Instance?.UpdateDelayBomb(0f);
 
@@ -112,25 +114,23 @@ public class BombManager : MonoBehaviour
         if (carrier == null) return;           // morreu algo que não é jogador com bomba
         if (!allPlayers.Contains(carrier)) return; // já tratado antes (evita duplicar)
 
-        bool wasCurrentCarrier = (carrier == currentCarrier);
-
         allPlayers.Remove(carrier);
 
-        if (wasCurrentCarrier)
-        {
-            currentCarrier = null;
-            lastCarrier = null;
+        if (currentCarrier != null && currentCarrier != carrier)
+            currentCarrier.SetBombState(false);
 
-            if (CheckWinCondition()) return;
+        currentCarrier = null;
+        lastCarrier = null;
 
-            delayRemaining = reassignDelay;
-            MainGameView.Instance?.UpdateDelayBomb(delayRemaining);
-            Invoke(nameof(AssignBombToRandomPlayer), reassignDelay);
-        }
-        else
-        {
-            CheckWinCondition(); // morreu sem bomba (ex: lava pegou outro jogador) — ainda pode encerrar a partida
-        }
+        CancelInvoke(nameof(AssignBombToRandomPlayer));
+
+        OnRoundEnded?.Invoke();
+
+        if (CheckWinCondition()) return;
+
+        delayRemaining = reassignDelay;
+        MainGameView.Instance?.UpdateDelayBomb(delayRemaining);
+        Invoke(nameof(AssignBombToRandomPlayer), reassignDelay);
     }
 
     private void AssignBombToRandomPlayer()
@@ -145,6 +145,8 @@ public class BombManager : MonoBehaviour
 
         MainGameView.Instance?.UpdateTimeBomb(timeRemaining);
         MainGameView.Instance?.UpdateDelayBomb(0f);
+
+        OnRoundStarted?.Invoke();
     }
 
     private bool CheckWinCondition()

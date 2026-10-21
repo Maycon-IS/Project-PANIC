@@ -9,6 +9,7 @@ public class ArenaEventManager : MonoBehaviour
 
     private List<IArenaEvent> _events = new List<IArenaEvent>();
     private IArenaEvent _currentEvent;
+    private bool isFirstRound = true;
 
     private void Awake()
     {
@@ -30,12 +31,14 @@ public class ArenaEventManager : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerElimination.OnPlayerEliminated += HandlePlayerEliminated;
+        BombManager.OnRoundEnded += HandleRoundEnded;
+        BombManager.OnRoundStarted += HandleRoundStarted;
     }
 
     private void OnDisable()
     {
-        PlayerElimination.OnPlayerEliminated -= HandlePlayerEliminated;
+        BombManager.OnRoundEnded -= HandleRoundEnded;
+        BombManager.OnRoundStarted -= HandleRoundStarted;
     }
 
     private void Update()
@@ -43,21 +46,28 @@ public class ArenaEventManager : MonoBehaviour
         _currentEvent?.Tick(Time.deltaTime);
     }
 
-    private void HandlePlayerEliminated(GameObject eliminatedPlayer)
+    private void HandleRoundEnded()
     {
-        Debug.Log($"[ArenaEventManager] {eliminatedPlayer.name} eliminado. " +
-                   $"Eventos disponíveis: {_events.Count}");
-
+        Debug.Log("[ArenaEventManager] Rodada encerrada — evento desativado.");
         _currentEvent?.Deactivate();
+        _currentEvent = null;
+    }
 
-        if (_events.Count > 0)
+    private void HandleRoundStarted()
+    {
+        if (isFirstRound)
         {
-            int index = Random.Range(0, _events.Count);
-            _currentEvent = _events[index];
-
-            Debug.Log($"[ArenaEventManager] Evento sorteado: {_currentEvent.EventName}");
-
-            _currentEvent.Activate();
+            isFirstRound = false;
+            Debug.Log("[ArenaEventManager] 1ª rodada — sem evento de arena.");
+            return;
         }
+
+        if (_events.Count == 0) return;
+
+        int index = Random.Range(0, _events.Count);
+        _currentEvent = _events[index];
+
+        Debug.Log($"[ArenaEventManager] Nova rodada — evento sorteado: {_currentEvent.EventName}");
+        _currentEvent.Activate();
     }
 }
