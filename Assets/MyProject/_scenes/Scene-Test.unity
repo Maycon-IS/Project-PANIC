@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 469338539}
   - component: {fileID: 469338538}
   m_Layer: 3
-  m_Name: walk (1)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 616916295}
   - component: {fileID: 616916294}
   m_Layer: 3
-  m_Name: walk (3)
+  m_Name: Plataforma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,7 +1182,7 @@ GameObject:
   - component: {fileID: 847488047}
   - component: {fileID: 847488046}
   m_Layer: 3
-  m_Name: walk (4)
+  m_Name: teto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1197,11 +1197,11 @@ Transform:
   m_GameObject: {fileID: 847488044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.49, y: 5.39, z: 0.0029732236}
-  m_LocalScale: {x: 34.23461, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 10.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 850643322}
+  m_Father: {fileID: 1410998081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &847488046
 BoxCollider2D:
@@ -1333,7 +1333,6 @@ Transform:
   - {fileID: 469338537}
   - {fileID: 1003505111}
   - {fileID: 616916293}
-  - {fileID: 847488045}
   - {fileID: 2065190711}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1417,7 +1416,7 @@ GameObject:
   - component: {fileID: 1003505113}
   - component: {fileID: 1003505112}
   m_Layer: 3
-  m_Name: walk (2)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1942,7 +1941,7 @@ GameObject:
   - component: {fileID: 1410998080}
   - component: {fileID: 1410998079}
   m_Layer: 3
-  m_Name: walk
+  m_Name: "ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2057,7 +2056,8 @@ Transform:
   m_LocalPosition: {x: -0.49, y: -5.34, z: 0.0029732236}
   m_LocalScale: {x: 34.23461, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 847488045}
   m_Father: {fileID: 850643322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431311334
