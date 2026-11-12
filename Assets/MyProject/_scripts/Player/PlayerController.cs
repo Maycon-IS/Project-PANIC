@@ -31,7 +31,11 @@ public class PlayerController : MonoBehaviour
     private bool jumpRequested;
     private bool isGrounded;
     private float defaultGravityScale;
+
     public bool IsGrounded => isGrounded;
+    public float ExternalVelocityX { get; set; }
+    public float JumpForceMultiplier { get; set; } = 1f;
+    public float GravityMultiplier { get; set; } = 1f;
 
     private bool dashRequested;
     private bool isDashing;
@@ -65,13 +69,13 @@ public class PlayerController : MonoBehaviour
         else
         {
             // Movimento
-            rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+            rb.velocity = new Vector2(moveInput * moveSpeed + ExternalVelocityX, rb.velocity.y);
 
-            // Pulor novamente
+            // Pulo
             if (jumpRequested && isGrounded)
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * jumpForce * JumpForceMultiplier, ForceMode2D.Impulse);
 
-            ApplyFallGravity(); //Aplicacao da gravidade
+            ApplyFallGravity(); //Aplicacao da gravidad
         }
 
         jumpRequested = false;
@@ -114,7 +118,7 @@ public class PlayerController : MonoBehaviour
     private void ApplyFallGravity()
     {
         if (rb.velocity.y < 0f)
-            rb.gravityScale = defaultGravityScale * fallGravityMultiplier; // Caindo: aumenta a gravidade para uma descida mais r�pida e "seca"
+            rb.gravityScale = defaultGravityScale * fallGravityMultiplier * GravityMultiplier; // Caindo: aumenta a gravidade para uma descida mais r�pida e "seca"
         else
             rb.gravityScale = defaultGravityScale;  // Subindo ou parado: gravidade normal
     }

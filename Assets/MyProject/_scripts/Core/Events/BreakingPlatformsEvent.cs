@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BreakingPlatformsEvent : MonoBehaviour, IArenaEvent
 {
-    [Header("Identidade")]
+    [Header("Nome do Evento")]
     [SerializeField] private string eventName = "Plataformas Frageis";
 
     [Header("Plataformas que podem ser pisadas e quebrar")]

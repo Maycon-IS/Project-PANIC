@@ -6,6 +6,7 @@ public class BombManager : MonoBehaviour
 {
     public static BombManager Instance { get; private set; }
     public IReadOnlyList<BombCarrier> ActivePlayers => allPlayers;
+    public BombCarrier CurrentCarrier => currentCarrier;
 
     [Header("Configuracao da Bomba")]
     [SerializeField] private float bombTimer = 8f;

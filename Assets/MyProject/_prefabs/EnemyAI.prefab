@@ -324,3 +324,6 @@ MonoBehaviour:
   wanderInterval: 3
   fleeDashDistance: 2
   chaseDashDistance: 3
+  stuckCheckInterval: 1
+  stuckMovementThreshold: 0.3
+  targetBlacklistDuration: 3

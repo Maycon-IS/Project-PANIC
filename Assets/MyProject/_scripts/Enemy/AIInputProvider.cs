@@ -31,7 +31,9 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
     private BombCarrier currentTarget;
     private BombCarrier blacklistedTarget;
     private float blacklistTimer;
-    
+
+    public float VisionMultiplier { get; set; } = 1f;
+
     private Vector2 positionAtLastStuckCheck;
     private float stuckCheckTimer;
 
@@ -147,7 +149,7 @@ public class AIInputProvider : MonoBehaviour, IInputProvider
 
             float dist = Vector2.Distance(transform.position, candidate.transform.position);
 
-            if (!myBombCarrier.HasBomb && dist > awarenessRadius) continue;
+            if (!myBombCarrier.HasBomb && dist > awarenessRadius * VisionMultiplier) continue;
 
             if (dist < nearestDist)
             {
