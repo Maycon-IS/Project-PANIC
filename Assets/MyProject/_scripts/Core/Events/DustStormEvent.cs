@@ -145,17 +145,14 @@ public class DustStormEvent : MonoBehaviour, IArenaEvent
     {
         BombCarrier holder = BombManager.Instance.CurrentCarrier;
 
-        float vision = currentPhase == StormPhase.Intense
-            ? intenseVision
-            : mildVision;
+        float vision = currentPhase == StormPhase.Intense ? intenseVision : mildVision;
 
         foreach (AIInputProvider ai in affectedAI)
         {
             if (ai == null || !ai.gameObject.activeInHierarchy)
                 continue;
 
-            bool isHolder = holder != null &&
-                            ai.gameObject == holder.gameObject;
+            bool isHolder = holder != null && ai.gameObject == holder.gameObject;
 
             ai.VisionMultiplier = isHolder ? 1f : vision;
         }
