@@ -9,9 +9,10 @@ public class MenuTransitionUI : MonoBehaviour
     [SerializeField] private RectTransform posLogoInicio;
     [SerializeField] private RectTransform posLogoMenu;
 
-    [Header("Tamanho da Logo")]
+    /*[Header("Tamanho da Logo")]
     [SerializeField] private float escalaInicio = 1f;
     [SerializeField] private float escalaMenu = 0.55f;
+    */
 
     [Header("Painel de Botões")]
     [SerializeField] private RectTransform painelBotoes;
