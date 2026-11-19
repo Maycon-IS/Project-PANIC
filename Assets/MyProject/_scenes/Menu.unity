@@ -3939,7 +3939,7 @@ MonoBehaviour:
   panelPlay: {fileID: 581780413}
   panelSettings: {fileID: 399967276}
   panelCretids: {fileID: 1968706289}
-  rooms: {fileID: 0}
+  rooms: {fileID: 59157386}
   buttons:
   - {fileID: 1465029685}
   backKey: 27

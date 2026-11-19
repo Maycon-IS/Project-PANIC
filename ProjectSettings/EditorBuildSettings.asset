@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyProject/_scenes/Scene-Test.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/MyProject/_scenes/Menu.unity
+    guid: 3b3807604c9ebc548a2fa5fed839a3ca
+  - enabled: 1
+    path: Assets/MyProject/_scenes/LobbyOf.unity
+    guid: aa2961d4935b08c4dac0b876f70dd393
+  - enabled: 1
+    path: Assets/MyProject/_scenes/LobbyOn.unity
+    guid: 0dac6892a3f771b4dad5ef55d9e19997
   m_configObjects: {}
