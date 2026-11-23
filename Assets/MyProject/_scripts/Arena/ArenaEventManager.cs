@@ -1,3 +1,4 @@
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,11 +6,31 @@ public class ArenaEventManager : MonoBehaviour
 {
     public static ArenaEventManager Instance { get; private set; }
 
+    [Header("Eventos Disponíveis")]
     [SerializeField] private List<MonoBehaviour> eventBehaviours;
 
-    private List<IArenaEvent> _events = new List<IArenaEvent>();
-    private IArenaEvent _currentEvent;
-    private bool isFirstRound = true;
+    private readonly List<IArenaEvent> events =
+        new List<IArenaEvent>();
+
+    private IArenaEvent currentEvent;
+    private IArenaEvent preparedEvent;
+
+    private int activatedEventCount;
+
+    public int ActivatedEventCount => activatedEventCount;
+
+    public string CurrentEventName =>
+        currentEvent != null
+            ? currentEvent.EventName
+            : "";
+
+    public string NextEventName =>
+        preparedEvent != null
+            ? preparedEvent.EventName
+            : "";
+
+    public bool HasPreparedEvent => preparedEvent != null;
+    public bool HasActiveEvent => currentEvent != null;
 
     private void Awake()
     {
@@ -18,56 +39,85 @@ public class ArenaEventManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
 
-        foreach (var behaviour in eventBehaviours)
+        foreach (MonoBehaviour behaviour in eventBehaviours)
         {
+            if (behaviour == null)
+                continue;
+
             if (behaviour is IArenaEvent arenaEvent)
-                _events.Add(arenaEvent);
+                events.Add(arenaEvent);
             else
-                Debug.LogWarning($"{behaviour.name} nao implementa IArenaEvent.");
+                Debug.LogWarning(
+                    $"{behaviour.name} não implementa IArenaEvent."
+                );
         }
     }
 
-    private void OnEnable()
+    private void OnDestroy()
     {
-        BombManager.OnRoundEnded += HandleRoundEnded;
-        BombManager.OnRoundStarted += HandleRoundStarted;
-    }
-
-    private void OnDisable()
-    {
-        BombManager.OnRoundEnded -= HandleRoundEnded;
-        BombManager.OnRoundStarted -= HandleRoundStarted;
+        if (Instance == this)
+            Instance = null;
     }
 
     private void Update()
     {
-        _currentEvent?.Tick(Time.deltaTime);
+        currentEvent?.Tick(Time.deltaTime);
     }
 
-    private void HandleRoundEnded()
+    public void PrepareNextEvent()
     {
-        Debug.Log("[ArenaEventManager] Rodada encerrada — evento desativado.");
-        _currentEvent?.Deactivate();
-        _currentEvent = null;
-    }
+        DeactivateCurrentEvent();
 
-    private void HandleRoundStarted()
-    {
-        if (isFirstRound)
-        {
-            isFirstRound = false;
-            Debug.Log("[ArenaEventManager] 1ª rodada — sem evento de arena.");
+        preparedEvent = null;
+
+        if (events.Count == 0)
             return;
-        }
 
-        if (_events.Count == 0) return;
+        int index = Random.Range(0, events.Count);
+        preparedEvent = events[index];
 
-        int index = Random.Range(0, _events.Count);
-        _currentEvent = _events[index];
+        Debug.Log(
+            $"Próximo evento: {preparedEvent.EventName}"
+        );
+    }
 
-        Debug.Log($"[ArenaEventManager] Nova rodada — evento sorteado: {_currentEvent.EventName}");
-        _currentEvent.Activate();
+    public void ActivatePreparedEvent()
+    {
+        if (preparedEvent == null)
+            return;
+
+        DeactivateCurrentEvent();
+
+        currentEvent = preparedEvent;
+        preparedEvent = null;
+
+        currentEvent.Activate();
+        activatedEventCount++;
+
+        Debug.Log(
+            $"Evento ativado: {currentEvent.EventName}"
+        );
+    }
+
+    public void DeactivateCurrentEvent()
+    {
+        if (currentEvent == null)
+            return;
+
+        currentEvent.Deactivate();
+        currentEvent = null;
+    }
+
+    public void ResetEvents(bool resetStatistics = true)
+    {
+        DeactivateCurrentEvent();
+
+        preparedEvent = null;
+
+        if (resetStatistics)
+            activatedEventCount = 0;
     }
 }

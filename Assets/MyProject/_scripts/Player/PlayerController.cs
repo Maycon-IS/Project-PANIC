@@ -53,6 +53,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0f)
+        {
+            moveInput = 0f;
+            jumpRequested = false;
+            dashRequested = false;
+            return;
+        }
+
         Moviment();
         FlipSprite();
     }

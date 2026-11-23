@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
 
     [Header("Chuva")]
     [SerializeField] private GameObject rain;
-    //[SerializeField] private bool isRain = true;
+    [SerializeField] private bool isRain = true;
 
     [Header("Paineis Principais")]
     [SerializeField] private GameObject gameObjetPE;
@@ -57,6 +57,7 @@ public class Menu : MonoBehaviour
 
         InputCanPress();
         VerificationButtons();
+        SelectRain();
     }
 
     // NAVEGACAO ENTRE PAINEIS
@@ -150,7 +151,7 @@ public class Menu : MonoBehaviour
         if (buttons != null)
             DeactivationButtons();
 
-        if (painelAtual == gameObjectPS)
+        if (painelAtual == gameObjectPS && !AnyButtonInGameObjectPS())
             ActiveButtons();
     }
 
@@ -174,6 +175,25 @@ public class Menu : MonoBehaviour
                 button.interactable = false;
             }
         }
+    }
+
+    private bool AnyButtonInGameObjectPS()
+    {
+        if (buttons == null || gameObjectPS == null)
+            return false;
+
+        Transform targetTransform = gameObjectPS.transform;
+
+        foreach (Button button in buttons)
+        {
+            if (button == null)
+                continue;
+
+            if (button.transform == targetTransform || button.transform.IsChildOf(targetTransform))
+                return true;
+        }
+
+        return false;
     }
 
     // TRANSICAO PARA O MENU
@@ -423,6 +443,23 @@ public class Menu : MonoBehaviour
         emTransicao = false;
 
         UpdateLogoVisibility();
+    }
+
+    private void SelectRain() 
+    {
+        //rain.SetActive(!isRain);
+
+#if UNITY_EDITOR
+        if (isRain == true)
+        {
+            rain.SetActive(true);
+        }
+        else if (isRain == false)
+        {
+            rain.SetActive(false);
+        }
+
+#endif
     }
 
     private void verificationPanels()

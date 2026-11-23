@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -5,6 +6,7 @@ public class BombCarrier : MonoBehaviour
 {
     [Header("Feedback Visual")]
     [SerializeField] private float bombAlpha = 0.4f;
+
     public bool HasBomb { get; private set; }
 
     private SpriteRenderer sr;
@@ -13,7 +15,7 @@ public class BombCarrier : MonoBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        normalColor = sr.color; // guarda a cor original (inclui o alpha original = 1)
+        normalColor = sr.color;
     }
 
     private void Start()
@@ -33,20 +35,43 @@ public class BombCarrier : MonoBehaviour
         UpdateVisual();
     }
 
+    // NOVO: Aplica a skin escolhida no LobbyOff.
+    public void SetAppearance(Sprite sprite, Color color)
+    {
+        if (sr == null)
+            sr = GetComponent<SpriteRenderer>();
+
+        sr.sprite = sprite;
+        normalColor = color;
+
+        UpdateVisual();
+    }
+
     private void UpdateVisual()
     {
         Color targetColor = normalColor;
-        targetColor.a = HasBomb ? bombAlpha : normalColor.a;
+
+        targetColor.a = HasBomb
+            ? bombAlpha
+            : normalColor.a;
+
         sr.color = targetColor;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!HasBomb) return;
+        if (!HasBomb)
+            return;
 
-        BombCarrier otherCarrier = other.GetComponent<BombCarrier>();
-        if (otherCarrier == null || otherCarrier == this) return;
+        BombCarrier otherCarrier =
+            other.GetComponent<BombCarrier>();
 
-        BombManager.Instance.TransferBomb(this, otherCarrier);
+        if (otherCarrier == null || otherCarrier == this)
+            return;
+
+        BombManager.Instance.TransferBomb(
+            this,
+            otherCarrier
+        );
     }
 }

@@ -8,6 +8,15 @@ public class UIRain : MaskableGraphic
     [SerializeField, Range(10, 300)]
     private int quantidadeGotas = 120;
 
+    [Header("Controle de Intensidade")]
+    [SerializeField, Range(0f, 1f)]
+    private float intensidade = 1f;
+
+    private int quantidadeOriginal;
+    private float transparenciaOriginal;
+
+    private float intensidadeAplicada = -1f;
+
     [SerializeField] private float velocidadeMinima = 350f;
     [SerializeField] private float velocidadeMaxima = 650f;
 
@@ -37,15 +46,66 @@ public class UIRain : MaskableGraphic
     protected override void Awake()
     {
         base.Awake();
+
         meuRect = GetComponent<RectTransform>();
         raycastTarget = false;
+
         color = new Color(0.7f, 0.85f, 1f, 1f);
+
+        quantidadeOriginal = quantidadeGotas;
+        transparenciaOriginal = transparencia;
+    }
+
+    protected override void Start()
+    {
+        base.Start();
+
+        if (GameSettingsManager.Instance != null)
+        {
+            GameSettingsManager.Instance.OnSettingsApplied -=
+                ApplySavedRainSettings;
+
+            GameSettingsManager.Instance.OnSettingsApplied +=
+                ApplySavedRainSettings;
+
+            ApplySavedRainSettings();
+        }
     }
 
     protected override void OnEnable()
     {
         base.OnEnable();
         InicializarGotas();
+
+        if (GameSettingsManager.Instance != null)
+        {
+            GameSettingsManager.Instance.OnSettingsApplied +=
+                ApplySavedRainSettings;
+
+            ApplySavedRainSettings();
+        }
+    }
+
+    protected override void OnDisable()
+    {
+        if (GameSettingsManager.Instance != null)
+        {
+            GameSettingsManager.Instance.OnSettingsApplied -=
+                ApplySavedRainSettings;
+        }
+
+        base.OnDisable();
+    }
+
+    private void ApplySavedRainSettings()
+    {
+        if (GameSettingsManager.Instance == null)
+            return;
+
+        float savedIntensity =
+            GameSettingsManager.Instance.Current.rainIntensity;
+
+        SetIntensity(savedIntensity);
     }
 
     private void InicializarGotas()
@@ -67,26 +127,76 @@ public class UIRain : MaskableGraphic
         SetVerticesDirty();
     }
 
+    public void SetIntensity(float value)
+    {
+        intensidade = Mathf.Clamp01(value);
+
+        if (Mathf.Approximately(intensidade, intensidadeAplicada))
+            return;
+
+        intensidadeAplicada = intensidade;
+
+        // Calcula quantas gotas devem aparecer.
+        quantidadeGotas = Mathf.RoundToInt(
+            Mathf.Lerp(0f, quantidadeOriginal, intensidade)
+        );
+
+        // Controla a transparência.
+        transparencia = Mathf.Lerp(
+            0f,
+            transparenciaOriginal,
+            intensidade
+        );
+
+        // Atualiza a quantidade de gotas.
+        InicializarGotas();
+    }
+
     private Gota CriarGota(float posicaoY)
     {
         Rect area = meuRect.rect;
 
+        // Espaço adicional nas laterais para a chuva inclinada
+        float margem = area.height *
+            Mathf.Abs(inclinacao) /
+            Mathf.Max(1f, tamanhoMinimo) + 100f;
+
         return new Gota
         {
-            x = Random.Range(area.xMin, area.xMax),
+            x = Random.Range(
+                area.xMin - margem,
+                area.xMax + margem
+            ),
+
             y = posicaoY,
+
             velocidade = Random.Range(
-                velocidadeMinima, velocidadeMaxima
+                velocidadeMinima,
+                velocidadeMaxima
             ),
+
             tamanho = Random.Range(
-                tamanhoMinimo, tamanhoMaximo
+                tamanhoMinimo,
+                tamanhoMaximo
             ),
+
             alpha = Random.Range(0.5f, 1f)
         };
     }
 
     private void Update()
     {
+        if (quantidadeGotas <= 0)
+        {
+            if (gotas == null || gotas.Length != 0)
+            {
+                gotas = new Gota[0];
+                SetVerticesDirty();
+            }
+
+            return;
+        }
+
         if (gotas == null || gotas.Length != quantidadeGotas)
         {
             InicializarGotas();
@@ -99,8 +209,18 @@ public class UIRain : MaskableGraphic
         {
             Gota gota = gotas[i];
 
-            gota.y -= gota.velocidade * delta;
+            // Movimento vertical
+            float movimentoY = gota.velocidade * delta;
 
+            // Movimento horizontal proporcional à inclinação
+            float movimentoX = (inclinacao / gota.tamanho) * movimentoY;
+
+            // Aplica o movimento diagonal
+            gota.x += movimentoX;
+            gota.y -= movimentoY;
+
+            // Reinicia a gota quando sair da área visível
+            // Reinicia somente quando a gota passa da parte inferior
             if (gota.y < area.yMin - gota.tamanho)
             {
                 gota = CriarGota(
