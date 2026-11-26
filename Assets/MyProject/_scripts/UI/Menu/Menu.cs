@@ -371,6 +371,7 @@ public class Menu : MonoBehaviour
 #elif UNITY_WEBGL
 
     // Redireciona para a página do jogo
+    Time.timeScale = 0f;
     Application.OpenURL(
         "https://maycon-isac.itch.io/last-furse-rival-arena"
     );
@@ -385,7 +386,7 @@ public class Menu : MonoBehaviour
 
 
 
-// CONTROLE DO TECLADO
+    // CONTROLE DO TECLADO
     private void InputCanPress()
     {
         if (Input.GetKeyDown(backKey))

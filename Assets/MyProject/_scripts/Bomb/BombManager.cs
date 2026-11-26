@@ -195,7 +195,22 @@ public class BombManager : MonoBehaviour
         if (from != currentCarrier)
             return;
 
-        if (!allPlayers.Contains(to))
+        // Garante que ambos ainda estao vivos na partida
+        if (!allPlayers.Contains(from) ||
+            !allPlayers.Contains(to))
+            return;
+
+        // Protecao adicional contra jogadores mortos
+        PlayerElimination fromElimination =
+            from.GetComponent<PlayerElimination>();
+
+        PlayerElimination toElimination =
+            to.GetComponent<PlayerElimination>();
+
+        if (fromElimination != null && fromElimination.IsDead)
+            return;
+
+        if (toElimination != null && toElimination.IsDead)
             return;
 
         if (immunityRemaining > 0f && to == lastCarrier)
@@ -246,6 +261,8 @@ public class BombManager : MonoBehaviour
             eliminated.GetComponent<PlayerInputProvider>() != null;
 
         bool wasCarrier = eliminated == currentCarrier;
+
+        eliminated.SetBombState(false);
 
         allPlayers.Remove(eliminated);
         eliminationCount++;

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movimento")]
@@ -20,10 +19,11 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dash")]
     [SerializeField] private float dashSpeed = 15f;
-    [SerializeField] private float dashDuration = 0.15f;
+    [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashCooldown = 2f;
+    
+    [SerializeField] private SpriteRenderer sr; 
 
-    private SpriteRenderer sr;
     private Rigidbody2D rb;
     private IInputProvider inputProvider;
 
@@ -33,6 +33,12 @@ public class PlayerController : MonoBehaviour
     private float defaultGravityScale;
 
     public bool IsGrounded => isGrounded;
+    public bool IsDashing => isDashing;
+    public float HorizontalVelocity => rb.velocity.x;
+    public float VerticalVelocity => rb.velocity.y;
+    public float DashDuration => dashDuration;
+
+
     public float ExternalVelocityX { get; set; }
     public float JumpForceMultiplier { get; set; } = 1f;
     public float GravityMultiplier { get; set; } = 1f;
@@ -45,9 +51,13 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        if (sr == null)
+            sr = GetComponentInChildren<SpriteRenderer>(); 
+        
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
+
         inputProvider = GetComponent<IInputProvider>();
+        
         defaultGravityScale = rb.gravityScale; // guarda o valor original definido no Inspector
     }
 
@@ -110,6 +120,9 @@ public class PlayerController : MonoBehaviour
 
     private void FlipSprite()
     {
+        if (isDashing)
+            return;
+
         // Flip do sprite
         if (moveInput < 0)
         {

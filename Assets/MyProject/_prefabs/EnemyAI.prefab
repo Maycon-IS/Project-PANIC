@@ -114,6 +114,8 @@ GameObject:
   - component: {fileID: 7727484396831244064}
   - component: {fileID: 1852779556536928229}
   - component: {fileID: 3825630680526500264}
+  - component: {fileID: -2904232909330201661}
+  - component: {fileID: -8955101287324808693}
   m_Layer: 0
   m_Name: EnemyAI
   m_TagString: Enemy
@@ -300,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dea225d3a8fc2141a9cedbd2c474400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathAnimationTimeout: 3
 --- !u!114 &3825630680526500264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,3 +330,38 @@ MonoBehaviour:
   stuckCheckInterval: 1
   stuckMovementThreshold: 0.3
   targetBlacklistDuration: 3
+--- !u!95 &-2904232909330201661
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7144751007070579391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-8955101287324808693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7144751007070579391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7550f4a63e997314389556f4625f6508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementThreshold: 0.1
+  verticalThreshold: 0.1
