@@ -93,9 +93,804 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1793
+        width: 231
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a5b8d151a42dd419c55fdb59494d5c
+      internalID: 63757424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1793
+        width: 184
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ffa5e2a4330ce468ac7feff1a105af
+      internalID: 1071987554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1793
+        width: 185
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5938bbc4ae80e7740b4b9f26920100ab
+      internalID: 1140492522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_3
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1793
+        width: 183
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b422f196867c8d4ea50d01b9250dac4
+      internalID: 2112987361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1793
+        width: 184
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d813a9e8029e634ab36c68fcf2217af
+      internalID: 1560627026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1505
+        width: 190
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075154475285bee40bad4829ae9dd8af
+      internalID: -732158649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1505
+        width: 183
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba222a7959044a54fa4e72b270e4b209
+      internalID: -375303234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_7
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1505
+        width: 181
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c552e3ad6183cf4c96ab0d1bd3fe799
+      internalID: -428442975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_8
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1505
+        width: 168
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b80b42427d18a94bb073d3166f19108
+      internalID: -839116108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_9
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1505
+        width: 166
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7e60c2681665a4eb028f6e017c699a
+      internalID: -193393316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_10
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1505
+        width: 166
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71114e5d37a51e24cbf5fd5b2d00ff6c
+      internalID: 1386749094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1217
+        width: 154
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1060b2b56f1034da9a0a63e48ef032
+      internalID: -1782182808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_12
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1217
+        width: 147
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b213f0ede08ea4d83f42b4ab015f6e
+      internalID: 2078295883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_13
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1217
+        width: 143
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2680bad94cd48849a1d47b2bca0e5ad
+      internalID: -783704251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_14
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1217
+        width: 136
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bba73bc600b8a40943316932ef0cd1
+      internalID: -2007696179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1217
+        width: 132
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58067d97176a9c54ea904b2a102cd429
+      internalID: -1277586105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 880
+        width: 152
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82f9e6e35066be478328911336a7363
+      internalID: -2143980456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_17
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1217
+        width: 206
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f33044d78cb5142bcb920b713600b7
+      internalID: 1359395347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_18
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 880
+        width: 152
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4837fe977fed9e541a4065e3cbe99ff3
+      internalID: 591461938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_19
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1217
+        width: 140
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4e0648e62f03e47b5763efc872d9b4
+      internalID: -323557772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 880
+        width: 152
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99b70a46d43fc840b558559413dc56b
+      internalID: 1872258709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_21
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 640
+        width: 142
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9ac3d027b864c4c9394f39f1510644
+      internalID: 1563739486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_22
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 640
+        width: 208
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aebacca54117349854bd6b8b2a6593
+      internalID: -1503876424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_23
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 640
+        width: 177
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6cef1d0e1c4954fa4df0222260bb79
+      internalID: 576654466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_24
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 640
+        width: 156
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ce2748c309f604aa5398fc940c41cb
+      internalID: -171610822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_25
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 355
+        width: 193
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1f51c4dbfcd524fa497bfc899b08cd
+      internalID: -1009115613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_26
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 355
+        width: 193
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce67110bde95764281eb85e736326f1
+      internalID: -718906138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_27
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 355
+        width: 165
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c8f1caaf9b7a647a50f548b6e47d90
+      internalID: -823395708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_28
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 355
+        width: 174
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c561e191c27f97d40b6259a759b4a65e
+      internalID: 1468791525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_29
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 358
+        width: 141
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a0e27f5732dac4aa21afcc1600bcfb
+      internalID: 1584562156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_30
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 355
+        width: 179
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71095396923ba8041a3d1551181490fa
+      internalID: 1776135422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_31
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 355
+        width: 158
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b100d59926b354fb83740616da0d04
+      internalID: -72267455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_32
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 355
+        width: 210
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2940ca5c87316e4c80fb08b2f159cc8
+      internalID: -1519453088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_33
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 67
+        width: 188
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fd5613e98a56a42bc6a1d094f237fc
+      internalID: 571270992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_34
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 67
+        width: 181
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16996ec24d618494ba983c738c78f867
+      internalID: -503174850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Orange_Normal_35
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 67
+        width: 198
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1256a9bca926144a7a47d269d3bc65
+      internalID: -1845706065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +901,72 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armadillo_Orange_Normal_0: 63757424
+      Armadillo_Orange_Normal_1: 1071987554
+      Armadillo_Orange_Normal_10: 1386749094
+      Armadillo_Orange_Normal_11: -1782182808
+      Armadillo_Orange_Normal_12: 2078295883
+      Armadillo_Orange_Normal_13: -783704251
+      Armadillo_Orange_Normal_14: -2007696179
+      Armadillo_Orange_Normal_15: -1277586105
+      Armadillo_Orange_Normal_16: -2143980456
+      Armadillo_Orange_Normal_17: 1359395347
+      Armadillo_Orange_Normal_18: 591461938
+      Armadillo_Orange_Normal_19: -323557772
+      Armadillo_Orange_Normal_2: 1140492522
+      Armadillo_Orange_Normal_20: 1872258709
+      Armadillo_Orange_Normal_21: 1563739486
+      Armadillo_Orange_Normal_22: -1503876424
+      Armadillo_Orange_Normal_23: 576654466
+      Armadillo_Orange_Normal_24: -171610822
+      Armadillo_Orange_Normal_25: -1009115613
+      Armadillo_Orange_Normal_26: -718906138
+      Armadillo_Orange_Normal_27: -823395708
+      Armadillo_Orange_Normal_28: 1468791525
+      Armadillo_Orange_Normal_29: 1584562156
+      Armadillo_Orange_Normal_3: 2112987361
+      Armadillo_Orange_Normal_30: 1776135422
+      Armadillo_Orange_Normal_31: -72267455
+      Armadillo_Orange_Normal_32: -1519453088
+      Armadillo_Orange_Normal_33: 571270992
+      Armadillo_Orange_Normal_34: -503174850
+      Armadillo_Orange_Normal_35: -1845706065
+      Armadillo_Orange_Normal_36: 2004275056
+      Armadillo_Orange_Normal_37: -1577941178
+      Armadillo_Orange_Normal_38: 1701808154
+      Armadillo_Orange_Normal_39: -580866598
+      Armadillo_Orange_Normal_4: 1560627026
+      Armadillo_Orange_Normal_40: 2057775369
+      Armadillo_Orange_Normal_41: 1038582728
+      Armadillo_Orange_Normal_42: 925911438
+      Armadillo_Orange_Normal_43: -343531460
+      Armadillo_Orange_Normal_44: 487527884
+      Armadillo_Orange_Normal_45: 2102052775
+      Armadillo_Orange_Normal_46: 53426952
+      Armadillo_Orange_Normal_47: -832718519
+      Armadillo_Orange_Normal_48: 421945232
+      Armadillo_Orange_Normal_49: -1993768723
+      Armadillo_Orange_Normal_5: -732158649
+      Armadillo_Orange_Normal_50: 750807524
+      Armadillo_Orange_Normal_51: -1102728094
+      Armadillo_Orange_Normal_52: -271926481
+      Armadillo_Orange_Normal_53: 1212727709
+      Armadillo_Orange_Normal_54: 893080878
+      Armadillo_Orange_Normal_55: 1925827195
+      Armadillo_Orange_Normal_56: -1590761711
+      Armadillo_Orange_Normal_57: -1853651584
+      Armadillo_Orange_Normal_58: -2065121666
+      Armadillo_Orange_Normal_59: 1512140197
+      Armadillo_Orange_Normal_6: -375303234
+      Armadillo_Orange_Normal_60: 1334938029
+      Armadillo_Orange_Normal_61: -1743747627
+      Armadillo_Orange_Normal_62: 1357508295
+      Armadillo_Orange_Normal_63: -903593694
+      Armadillo_Orange_Normal_64: -1477164772
+      Armadillo_Orange_Normal_7: -428442975
+      Armadillo_Orange_Normal_8: -839116108
+      Armadillo_Orange_Normal_9: -193393316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

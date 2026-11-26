@@ -93,9 +93,804 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1793
+        width: 243
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e3be4f01a9859469297a8009b4092f
+      internalID: 1119419133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1793
+        width: 186
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040582becd3996c4fb8b979c4bdc9413
+      internalID: 1176246275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1793
+        width: 185
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faeca2fb6b30384e9752b86369c955d
+      internalID: -11239543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_3
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1793
+        width: 187
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c98fa0a25a880947bc925db15844870
+      internalID: -1852155948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_4
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1793
+        width: 185
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf93a1d0ffb1a594193d447f5ae18692
+      internalID: 431337528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1505
+        width: 189
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f698e85d1c75574394ac686aa977cac
+      internalID: 79269559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1505
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0242ed242f2fb44835110115971f74
+      internalID: 549661343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_7
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1505
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec8b7e1558cae043851af038581135a
+      internalID: -1655435393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_8
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1505
+        width: 162
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6206a8e43622eac4ab8b27aa1b355321
+      internalID: 464571590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_9
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1505
+        width: 165
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ea933eeff7e824a825b836de79bd01
+      internalID: -1582706215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_10
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1505
+        width: 165
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a0f93c0735db1409bb293005f58c02
+      internalID: 78868433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1217
+        width: 158
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90f2d4c6378a2b43bec43d75ebbadaf
+      internalID: 1401569182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_12
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1217
+        width: 149
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16314bac7506494f8946efd60040ddb
+      internalID: -1601604422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_13
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1217
+        width: 144
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dec788ba63f8b443a6f9f3940871c5a
+      internalID: 1777495171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_14
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1217
+        width: 136
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d658423108b047142a36a5cc1891138e
+      internalID: 307797738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_15
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1217
+        width: 135
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be28e5a919f12a44b91a7ebb8351775
+      internalID: 815412907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_17
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1217
+        width: 198
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bc2c16828fc4848b5efa9dc423e7ad
+      internalID: 484228796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_19
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1217
+        width: 147
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e51d9918b5ff6348b58cde59fdb96f4
+      internalID: -1861859680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 875
+        width: 142
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641d4473d93bbf44e85be205b428388c
+      internalID: 1896424701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_18
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 875
+        width: 142
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd3a1a0a1dedb848a642d0a21b6f424
+      internalID: -2045979398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_20
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 875
+        width: 142
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f817060541ec30b48a443ae7200034cb
+      internalID: 1655588179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 645
+        width: 146
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc22b0946cb62764ab5fc9d4a3689729
+      internalID: -862153236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_22
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 645
+        width: 210
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f3503aaeaffb9429cfa024c93c8ddf
+      internalID: 167602978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_23
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 645
+        width: 185
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84692ad3a5eafd4ca76e375e21076dc
+      internalID: -1969428051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_24
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 645
+        width: 152
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d362412023cf04e88f2cdf0702bdf9
+      internalID: 189138574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 355
+        width: 178
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f844d4a2d3b05684daec8cac49dc61a7
+      internalID: 1410352623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_26
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 355
+        width: 178
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428eea4aaab4b0a4a8d36f9ae17844c0
+      internalID: -315017669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_27
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 355
+        width: 162
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac5a6113eaec8348b9b259ef0622d20
+      internalID: 1058012524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_28
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 355
+        width: 172
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25653b59f5450ce4da73e9982884d5a1
+      internalID: -1815972066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_29
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 355
+        width: 141
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a4fe1bda0eb664fbd3ae09d7d8a05a
+      internalID: -17761883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_30
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 355
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939586798fc3a814184b22e328b7fb2b
+      internalID: 1801124420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_31
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 355
+        width: 209
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f353abea184bd784f964339f7ef1de53
+      internalID: -1031325167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_32
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 355
+        width: 176
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a258397d145aa664b82b46e43b167ae6
+      internalID: -804249009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_33
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 69
+        width: 178
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e595de0cae398ea4d9f67ed8bc7df070
+      internalID: 1410866412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_34
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 69
+        width: 181
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488a54bcc26b89e4cb6d6bbbd4b33497
+      internalID: 694508196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Green_Normal_35
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 69
+        width: 196
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f23312f8f0dd624085346af19177d56
+      internalID: -248766730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +901,72 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armadillo_Green_Normal_0: 1119419133
+      Armadillo_Green_Normal_1: 1176246275
+      Armadillo_Green_Normal_10: 78868433
+      Armadillo_Green_Normal_11: 1401569182
+      Armadillo_Green_Normal_12: -1601604422
+      Armadillo_Green_Normal_13: 1777495171
+      Armadillo_Green_Normal_14: 307797738
+      Armadillo_Green_Normal_15: 815412907
+      Armadillo_Green_Normal_16: 1896424701
+      Armadillo_Green_Normal_17: 484228796
+      Armadillo_Green_Normal_18: -2045979398
+      Armadillo_Green_Normal_19: -1861859680
+      Armadillo_Green_Normal_2: -11239543
+      Armadillo_Green_Normal_20: 1655588179
+      Armadillo_Green_Normal_21: -862153236
+      Armadillo_Green_Normal_22: 167602978
+      Armadillo_Green_Normal_23: -1969428051
+      Armadillo_Green_Normal_24: 189138574
+      Armadillo_Green_Normal_25: 1410352623
+      Armadillo_Green_Normal_26: -315017669
+      Armadillo_Green_Normal_27: 1058012524
+      Armadillo_Green_Normal_28: -1815972066
+      Armadillo_Green_Normal_29: -17761883
+      Armadillo_Green_Normal_3: -1852155948
+      Armadillo_Green_Normal_30: 1801124420
+      Armadillo_Green_Normal_31: -1031325167
+      Armadillo_Green_Normal_32: -804249009
+      Armadillo_Green_Normal_33: 1410866412
+      Armadillo_Green_Normal_34: 694508196
+      Armadillo_Green_Normal_35: -248766730
+      Armadillo_Green_Normal_36: -1555405512
+      Armadillo_Green_Normal_37: -1895843105
+      Armadillo_Green_Normal_38: -2088999726
+      Armadillo_Green_Normal_39: 1414511846
+      Armadillo_Green_Normal_4: 431337528
+      Armadillo_Green_Normal_40: -1067664937
+      Armadillo_Green_Normal_41: 230993029
+      Armadillo_Green_Normal_42: -2085691478
+      Armadillo_Green_Normal_43: 414288212
+      Armadillo_Green_Normal_44: -166756575
+      Armadillo_Green_Normal_45: 1325178080
+      Armadillo_Green_Normal_46: -1213578911
+      Armadillo_Green_Normal_47: 1197060397
+      Armadillo_Green_Normal_48: -756014301
+      Armadillo_Green_Normal_49: 1912746017
+      Armadillo_Green_Normal_5: 79269559
+      Armadillo_Green_Normal_50: 940729027
+      Armadillo_Green_Normal_51: 1019767220
+      Armadillo_Green_Normal_52: 1540420328
+      Armadillo_Green_Normal_53: -490898419
+      Armadillo_Green_Normal_54: -894483383
+      Armadillo_Green_Normal_55: -1680266400
+      Armadillo_Green_Normal_56: 432009764
+      Armadillo_Green_Normal_57: 621733344
+      Armadillo_Green_Normal_58: 1409706289
+      Armadillo_Green_Normal_59: -1577831566
+      Armadillo_Green_Normal_6: 549661343
+      Armadillo_Green_Normal_60: 900220105
+      Armadillo_Green_Normal_61: 1218114014
+      Armadillo_Green_Normal_62: 2026692414
+      Armadillo_Green_Normal_63: -1882354672
+      Armadillo_Green_Normal_64: -908252406
+      Armadillo_Green_Normal_7: -1655435393
+      Armadillo_Green_Normal_8: 464571590
+      Armadillo_Green_Normal_9: -1582706215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

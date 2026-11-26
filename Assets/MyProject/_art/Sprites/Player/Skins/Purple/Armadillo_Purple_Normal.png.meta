@@ -93,9 +93,510 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1793
+        width: 242
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768acf399336d914cb26aeaa97256565
+      internalID: 1679417239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1793
+        width: 195
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a363d74fabc60478592d6de0b9ab70
+      internalID: -744166871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1793
+        width: 187
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e6f7d38aa998b41ab7c763f24e607d
+      internalID: -2034850481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1793
+        width: 190
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141740238c3036e4abe0c16458798d02
+      internalID: -806431174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1793
+        width: 187
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493a32b8017dee84ab9bd501484201ed
+      internalID: 1831435682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1505
+        width: 192
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4036fcb8273abd48a045c30ae061ef9
+      internalID: 897659062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1505
+        width: 181
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc76e616644f69459f79569e3519cdd
+      internalID: -1234568745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_7
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1505
+        width: 181
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc3ad085f2bf7d48beaab94fc999f7f
+      internalID: -1705861227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_8
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1505
+        width: 168
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0add1ecb45f947641979435c315cb898
+      internalID: -929399198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_9
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1505
+        width: 170
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f3ed2c84652f443b442ce096ba0608
+      internalID: 686932045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_10
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1505
+        width: 171
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c320317eb06ab44fa7cb1bdd73fe856
+      internalID: -1175746770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1217
+        width: 157
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8bf42845933d44588b87a2db1e301e
+      internalID: -769828648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_12
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1217
+        width: 149
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d14fe053c7e5041a5cfab1631516fa
+      internalID: -1294679610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_13
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1217
+        width: 141
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933113975b7deba40891c6ec7ca73c2b
+      internalID: -1955273449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_14
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1217
+        width: 135
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb41d53796e54d34c9b367cb092f930c
+      internalID: -183595517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1217
+        width: 130
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff559c8e8b0dbb4a8a86e5e7f2317a7
+      internalID: 6910865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_17
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1217
+        width: 211
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79e4bc488db35d40ba632e0483ff399
+      internalID: -403713552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_19
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1217
+        width: 148
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567583cc008861d4fad101cde85563e3
+      internalID: 559572372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 875
+        width: 141
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d185277db19b9a640941c833f98b6e5c
+      internalID: -189732483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_18
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 875
+        width: 141
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36db8817453e414c89c97951cd3c6c5
+      internalID: 532598915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_20
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 875
+        width: 135
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b660b55b720da1c4d9569d7d6fc4b0c3
+      internalID: -648733625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Purple_Normal_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 644
+        width: 144
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32272dae9df04c948a5afc78145f9cf8
+      internalID: -1077841001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +607,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armadillo_Purple_Normal_0: 1679417239
+      Armadillo_Purple_Normal_1: -744166871
+      Armadillo_Purple_Normal_10: -1175746770
+      Armadillo_Purple_Normal_11: -769828648
+      Armadillo_Purple_Normal_12: -1294679610
+      Armadillo_Purple_Normal_13: -1955273449
+      Armadillo_Purple_Normal_14: -183595517
+      Armadillo_Purple_Normal_15: 6910865
+      Armadillo_Purple_Normal_16: -189732483
+      Armadillo_Purple_Normal_17: -403713552
+      Armadillo_Purple_Normal_18: 532598915
+      Armadillo_Purple_Normal_19: 559572372
+      Armadillo_Purple_Normal_2: -2034850481
+      Armadillo_Purple_Normal_20: -648733625
+      Armadillo_Purple_Normal_21: -1077841001
+      Armadillo_Purple_Normal_22: 595928980
+      Armadillo_Purple_Normal_23: 651613727
+      Armadillo_Purple_Normal_24: -337468285
+      Armadillo_Purple_Normal_25: 720445855
+      Armadillo_Purple_Normal_26: 1703009218
+      Armadillo_Purple_Normal_27: 1425648637
+      Armadillo_Purple_Normal_28: -2066165287
+      Armadillo_Purple_Normal_29: 833977269
+      Armadillo_Purple_Normal_3: -806431174
+      Armadillo_Purple_Normal_30: 949712454
+      Armadillo_Purple_Normal_31: -1165373522
+      Armadillo_Purple_Normal_32: 404129380
+      Armadillo_Purple_Normal_33: -816208641
+      Armadillo_Purple_Normal_34: -740172032
+      Armadillo_Purple_Normal_35: 1810186225
+      Armadillo_Purple_Normal_36: 103983361
+      Armadillo_Purple_Normal_37: 1891143161
+      Armadillo_Purple_Normal_38: -1225206618
+      Armadillo_Purple_Normal_39: 721352992
+      Armadillo_Purple_Normal_4: 1831435682
+      Armadillo_Purple_Normal_40: -331208913
+      Armadillo_Purple_Normal_41: -1858337507
+      Armadillo_Purple_Normal_42: 1732312897
+      Armadillo_Purple_Normal_43: -998083771
+      Armadillo_Purple_Normal_44: -1005990646
+      Armadillo_Purple_Normal_45: -1319496617
+      Armadillo_Purple_Normal_46: 273420060
+      Armadillo_Purple_Normal_47: -2056616597
+      Armadillo_Purple_Normal_48: -1740410279
+      Armadillo_Purple_Normal_49: 328961537
+      Armadillo_Purple_Normal_5: 897659062
+      Armadillo_Purple_Normal_50: 482817584
+      Armadillo_Purple_Normal_51: -1375290439
+      Armadillo_Purple_Normal_52: 818574826
+      Armadillo_Purple_Normal_53: 667720313
+      Armadillo_Purple_Normal_54: 1594160305
+      Armadillo_Purple_Normal_55: 1409974081
+      Armadillo_Purple_Normal_56: -897665985
+      Armadillo_Purple_Normal_57: -1232718184
+      Armadillo_Purple_Normal_58: 8843588
+      Armadillo_Purple_Normal_59: -1862896919
+      Armadillo_Purple_Normal_6: -1234568745
+      Armadillo_Purple_Normal_60: -406564121
+      Armadillo_Purple_Normal_61: 5649721
+      Armadillo_Purple_Normal_62: 53238973
+      Armadillo_Purple_Normal_63: 888020959
+      Armadillo_Purple_Normal_64: -1122940907
+      Armadillo_Purple_Normal_65: 626999770
+      Armadillo_Purple_Normal_7: -1705861227
+      Armadillo_Purple_Normal_8: -929399198
+      Armadillo_Purple_Normal_9: 686932045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
