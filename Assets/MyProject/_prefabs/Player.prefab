@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 5526295406793494720}
   - component: {fileID: 8785984834349263508}
   - component: {fileID: 7495964523169768834}
-  - component: {fileID: 1775216186268938490}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -194,61 +193,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e40bd87b6dba847a366ee7630a1a24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalizer: {fileID: 1775216186268938490}
   visual: {fileID: 1122775288887585393}
   animator: {fileID: 4268200805002507773}
+  spriteRenderer: {fileID: 275764130508481323}
   bodyCollider: {fileID: 4978143281338107386}
-  smoothSpeed: 20
-  animations:
-  - animationName: Idle
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
-    colliderMultiplier: {x: 1, y: 1}
-  - animationName: Run
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
-    colliderMultiplier: {x: 1, y: 1}
-  - animationName: Jump
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
-    colliderMultiplier: {x: 1, y: 1}
+  autoFitCollider: 1
+  bombDetector: {fileID: 3250174362584168303}
+  bombDetectorMargin: 0.08
+  widthFit: 0.65
+  heightFit: 0.9
+  keepColliderBottom: 1
+  settings:
   - animationName: Fall
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
+    visualScale: 1.25
+    visualOffsetY: 0
     colliderMultiplier: {x: 1, y: 1}
   - animationName: Land
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
+    visualScale: 1.25
+    visualOffsetY: 0
     colliderMultiplier: {x: 1, y: 1}
   - animationName: Dash
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
+    visualScale: 1
+    visualOffsetY: 0
+    colliderMultiplier: {x: 0.9, y: 0.55}
+  - animationName: Jump
+    visualScale: 1.3
+    visualOffsetY: 0
     colliderMultiplier: {x: 1, y: 1}
-  - animationName: Death
-    visualScale: {x: 1, y: 1}
-    visualOffset: {x: 0, y: 0}
-    colliderMultiplier: {x: 1, y: 1}
---- !u!114 &1775216186268938490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662653041811746751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a44cf14d5f50794a84880b41ac89f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 275764130508481323}
-  referenceSprite: {fileID: -1523740616, guid: 8541c86fbbf78bd48b4b2f98256f20f6, type: 3}
-  automaticNormalization: 1
-  normalizationStrength: 1
-  minScale: 0.5
-  maxScale: 2
-  alphaThreshold: 0.1
-  normalizeDash: 0
-  normalizeDeath: 0
 --- !u!1 &2926694826704844639
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 3836670407089726062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

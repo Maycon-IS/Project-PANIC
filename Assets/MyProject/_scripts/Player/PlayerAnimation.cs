@@ -37,8 +37,7 @@ public class PlayerAnimation : MonoBehaviour
         controller = GetComponent<PlayerController>();
         elimination = GetComponent<PlayerElimination>();
 
-        if (animator == null ||
-            animator.runtimeAnimatorController == null)
+        if (animator == null || animator.runtimeAnimatorController == null)
         {
             Debug.LogError(
                 "PlayerAnimation: Animator sem Controller configurado.",
@@ -87,8 +86,7 @@ public class PlayerAnimation : MonoBehaviour
         float verticalVelocity = controller.VerticalVelocity;
 
         // Evita permanecer no Idle no inicio do pulo
-        bool grounded = controller.IsGrounded &&
-                        verticalVelocity <= verticalThreshold;
+        bool grounded = controller.IsGrounded && verticalVelocity <= verticalThreshold;
 
         if (!initialized)
         {

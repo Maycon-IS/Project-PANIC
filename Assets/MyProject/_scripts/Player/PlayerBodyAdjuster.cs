@@ -4,38 +4,43 @@ using UnityEngine;
 public class PlayerBodyAdjuster : MonoBehaviour
 {
     [System.Serializable]
-    public class AnimationBody
+    public class BodySettings
     {
         public string animationName;
 
-        public Vector2 visualScale = Vector2.one;
-        public Vector2 visualOffset = Vector2.zero;
+        [Min(0.01f)]
+        public float visualScale = 1f;
+
+        public float visualOffsetY = 0f;
 
         public Vector2 colliderMultiplier = Vector2.one;
     }
 
-    [SerializeField] private PlayerSpriteNormalizer normalizer;
-
     [Header("Referencias")]
     [SerializeField] private Transform visual;
     [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private CapsuleCollider2D bodyCollider;
 
-    [Header("Suavizacao Visual")]
-    [SerializeField] private float smoothSpeed = 20f;
+    [Header("Collider Automatico")]
+    [SerializeField] private bool autoFitCollider = true;
+
+    [Header("Bomb Detector")]
+    [SerializeField] private CapsuleCollider2D bombDetector;
+
+    [Min(0f)]
+    [SerializeField] private float bombDetectorMargin = 0.08f;
+
+    [Range(0.1f, 1f)]
+    [SerializeField] private float widthFit = 0.65f;
+
+    [Range(0.1f, 1f)]
+    [SerializeField] private float heightFit = 0.9f;
+
+    [SerializeField] private bool keepColliderBottom = true;
 
     [Header("Ajustes por Animacao")]
-    [SerializeField]
-    private AnimationBody[] animations =
-    {
-        new AnimationBody { animationName = "Idle" },
-        new AnimationBody { animationName = "Run" },
-        new AnimationBody { animationName = "Jump" },
-        new AnimationBody { animationName = "Fall" },
-        new AnimationBody { animationName = "Land" },
-        new AnimationBody { animationName = "Dash" },
-        new AnimationBody { animationName = "Death" }
-    };
+    [SerializeField] private BodySettings[] settings;
 
     private Vector3 baseScale;
     private Vector3 basePosition;
@@ -43,27 +48,37 @@ public class PlayerBodyAdjuster : MonoBehaviour
     private Vector2 baseColliderSize;
     private Vector2 baseColliderOffset;
 
-    private AnimationBody currentBody;
+    private Vector2 targetColliderSize;
+    private Vector2 targetColliderOffset;
+
+    private BodySettings currentSettings;
+    private bool initialized;
 
     private void Awake()
     {
-        if (normalizer == null)
-            normalizer = GetComponent<PlayerSpriteNormalizer>();
-
         if (bodyCollider == null)
             bodyCollider = GetComponent<CapsuleCollider2D>();
 
-        if (animator == null)
-            animator = GetComponentInChildren<Animator>();
+        if (visual != null)
+        {
+            if (animator == null)
+                animator = visual.GetComponent<Animator>();
 
-        if (visual == null && animator != null)
-            visual = animator.transform;
+            if (spriteRenderer == null)
+                spriteRenderer =
+                    visual.GetComponent<SpriteRenderer>();
+        }
 
-        if (visual == null || visual == transform ||
-            animator == null)
+        if (visual == null ||
+            animator == null ||
+            spriteRenderer == null ||
+            visual == transform ||
+            animator.runtimeAnimatorController == null)
         {
             Debug.LogError(
-                "Configure o objeto filho Visual.", this);
+                "PlayerBodyAdjuster: referencias invalidas.",
+                this
+            );
 
             enabled = false;
             return;
@@ -74,99 +89,184 @@ public class PlayerBodyAdjuster : MonoBehaviour
 
         baseColliderSize = bodyCollider.size;
         baseColliderOffset = bodyCollider.offset;
+
+        targetColliderSize = baseColliderSize;
+        targetColliderOffset = baseColliderOffset;
+
+        initialized = true;
     }
 
     private void LateUpdate()
     {
+        if (!animator.isInitialized ||
+            !animator.isActiveAndEnabled)
+            return;
+
         AnimatorStateInfo state =
             animator.GetCurrentAnimatorStateInfo(0);
 
-        currentBody = null;
+        currentSettings = null;
 
-        foreach (AnimationBody body in animations)
+        if (settings != null)
         {
-            if (state.IsName(body.animationName))
+            foreach (BodySettings setting in settings)
             {
-                currentBody = body;
-                break;
+                if (setting != null &&
+                    state.IsName(setting.animationName))
+                {
+                    currentSettings = setting;
+                    break;
+                }
             }
         }
 
-        Vector2 scale = currentBody != null
-                    ? currentBody.visualScale
-                    : Vector2.one;
+        ApplyVisual();
+        CalculateCollider();
+    }
 
-        if (normalizer != null)
-        {
-            string animationName = currentBody != null
-                ? currentBody.animationName
-                : "";
+    private void ApplyVisual()
+    {
+        float scale = currentSettings != null
+            ? currentSettings.visualScale
+            : 1f;
 
-            float automaticScale =
-                normalizer.GetMultiplier(animationName);
+        float offsetY = currentSettings != null
+            ? currentSettings.visualOffsetY
+            : 0f;
 
-            scale *= automaticScale;
-        }
-
-        Vector2 offset = currentBody != null
-            ? currentBody.visualOffset
-            : Vector2.zero;
-
-        Vector3 targetScale = new Vector3(
-            baseScale.x * scale.x,
-            baseScale.y * scale.y,
+        visual.localScale = new Vector3(
+            baseScale.x * scale,
+            baseScale.y * scale,
             baseScale.z
         );
 
-        Vector3 targetPosition = basePosition +
-            new Vector3(offset.x, offset.y, 0f);
+        visual.localPosition =
+            basePosition + Vector3.up * offsetY;
+    }
 
-        float t = smoothSpeed > 0f
-            ? 1f - Mathf.Exp(-smoothSpeed * Time.deltaTime)
-            : 1f;
+    private void UpdateBombDetector()
+{
+    if (bombDetector == null || bombDetector == bodyCollider)
+        return;
 
-        visual.localScale = Vector3.Lerp(
-            visual.localScale, targetScale, t);
+    // Converte o centro para o espaco local do BombDetector.
+    Vector3 worldCenter =
+        bodyCollider.transform.TransformPoint(bodyCollider.offset);
 
-        visual.localPosition = Vector3.Lerp(
-            visual.localPosition, targetPosition, t);
+    Vector2 localCenter =
+        bombDetector.transform.InverseTransformPoint(worldCenter);
+
+    // Adiciona uma margem em todos os lados.
+    Vector2 size = bodyCollider.size +
+        Vector2.one * (bombDetectorMargin * 2f);
+
+    bombDetector.direction = bodyCollider.direction;
+    bombDetector.size = size;
+    bombDetector.offset = localCenter;
+}
+
+    private void CalculateCollider()
+    {
+        Vector2 size = baseColliderSize;
+        Vector2 offset = baseColliderOffset;
+
+        if (autoFitCollider && spriteRenderer.sprite != null)
+        {
+            Bounds bounds = spriteRenderer.sprite.bounds;
+
+            Vector3 center = bounds.center;
+
+            if (spriteRenderer.flipX)
+                center.x = -center.x;
+
+            if (spriteRenderer.flipY)
+                center.y = -center.y;
+
+            Vector3 localCenter =
+                transform.InverseTransformPoint(
+                    spriteRenderer.transform.TransformPoint(center)
+                );
+
+            Vector3 widthVector =
+                transform.InverseTransformVector(
+                    spriteRenderer.transform.TransformVector(
+                        Vector3.right * bounds.size.x
+                    )
+                );
+
+            Vector3 heightVector =
+                transform.InverseTransformVector(
+                    spriteRenderer.transform.TransformVector(
+                        Vector3.up * bounds.size.y
+                    )
+                );
+
+            size = new Vector2(
+                (Mathf.Abs(widthVector.x) +
+                 Mathf.Abs(heightVector.x)) * widthFit,
+
+                (Mathf.Abs(widthVector.y) +
+                 Mathf.Abs(heightVector.y)) * heightFit
+            );
+
+            offset = localCenter;
+        }
+
+        if (currentSettings != null)
+        {
+            size = Vector2.Scale(
+                size,
+                currentSettings.colliderMultiplier
+            );
+        }
+
+        size.x = Mathf.Max(0.01f, size.x);
+        size.y = Mathf.Max(0.01f, size.y);
+
+        if (keepColliderBottom)
+        {
+            float bottom =
+                baseColliderOffset.y -
+                baseColliderSize.y * 0.5f;
+
+            offset.y = bottom + size.y * 0.5f;
+        }
+
+        targetColliderSize = size;
+        targetColliderOffset = offset;
     }
 
     private void FixedUpdate()
     {
-        Vector2 multiplier = currentBody != null
-            ? currentBody.colliderMultiplier
-            : Vector2.one;
+        if (!initialized)
+            return;
 
-        Vector2 targetSize = new Vector2(
-            baseColliderSize.x * Mathf.Max(0.1f, multiplier.x),
-            baseColliderSize.y * Mathf.Max(0.1f, multiplier.y)
-        );
+        if (bodyCollider.size != targetColliderSize)
+            bodyCollider.size = targetColliderSize;
 
-        // Mantem a base do collider na mesma altura.
-        Vector2 targetOffset = baseColliderOffset;
+        if (bodyCollider.offset != targetColliderOffset)
+            bodyCollider.offset = targetColliderOffset; 
 
-        targetOffset.y +=
-            (targetSize.y - baseColliderSize.y) / 2f;
+        UpdateBombDetector();
 
-        bodyCollider.size = targetSize;
-        bodyCollider.offset = targetOffset;
     }
 
     private void OnDisable()
     {
-        if (visual != null && visual != transform)
-        {
-            visual.localScale = baseScale;
-            visual.localPosition = basePosition;
-        }
+        if (!initialized)
+            return;
 
-        if (bodyCollider != null && baseColliderSize.x > 0f)
-        {
-            bodyCollider.size = baseColliderSize;
-            bodyCollider.offset = baseColliderOffset;
-        }
+        visual.localScale = baseScale;
+        visual.localPosition = basePosition;
 
-        currentBody = null;
+        bodyCollider.size = baseColliderSize;
+        bodyCollider.offset = baseColliderOffset;
+
+        targetColliderSize = baseColliderSize;
+        targetColliderOffset = baseColliderOffset;
+
+        currentSettings = null;
+
+        UpdateBombDetector();
     }
 }
