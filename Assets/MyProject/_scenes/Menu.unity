@@ -3942,6 +3942,8 @@ MonoBehaviour:
   rooms: {fileID: 59157386}
   buttons:
   - {fileID: 1465029685}
+  - {fileID: 306989828}
+  - {fileID: 597813338}
   backKey: 27
   logo: {fileID: 838900108}
   menuVisual: {fileID: 1286278813}

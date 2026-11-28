@@ -150,7 +150,7 @@ public class Menu : MonoBehaviour
         if (buttons != null)
             DeactivationButtons();
 
-        if (painelAtual == gameObjectPS)
+        if (painelAtual == gameObjectPS && !AnyButtonInGameObjectPS())
             ActiveButtons();
     }
 
@@ -175,7 +175,24 @@ public class Menu : MonoBehaviour
             }
         }
     }
+    private bool AnyButtonInGameObjectPS()
+    {
+        if (buttons == null || gameObjectPS == null)
+            return false;
 
+        Transform targetTransform = gameObjectPS.transform;
+
+        foreach (Button button in buttons)
+        {
+            if (button == null)
+                continue;
+
+            if (button.transform == targetTransform || button.transform.IsChildOf(targetTransform))
+                return true;
+        }
+
+        return false;
+    }
     // TRANSICAO PARA O MENU
 
     private IEnumerator TransitionToCredits()
