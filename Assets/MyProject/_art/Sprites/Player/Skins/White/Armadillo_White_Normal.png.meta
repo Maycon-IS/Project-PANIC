@@ -93,9 +93,791 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1793
+        width: 238
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245fcf27bc393eb4ba39992dc6011a88
+      internalID: -1528970862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1793
+        width: 186
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8646975674d8a4392c15be428ed406
+      internalID: 1053534863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1793
+        width: 185
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb27f508ddac0143932961ee352dcf3
+      internalID: 634519932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_3
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1793
+        width: 181
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fd13374bf5dbc46aa5b6266530c58b
+      internalID: 134770131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_4
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1793
+        width: 180
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48b407a2cc92b84582cd10353ddb67b
+      internalID: 1747947785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1505
+        width: 191
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12da6a3bb0c6ad84ca6322dab07f4ed3
+      internalID: -1076329135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_6
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1505
+        width: 179
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72da7513d66a3741a06f238ad725ff1
+      internalID: -778008163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_7
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1505
+        width: 180
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658d26a239a08264b86a9f07be16528c
+      internalID: 307973137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_8
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1505
+        width: 160
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b1e25234f9e974e9a6ab3594aafd23
+      internalID: 1723457541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_9
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1505
+        width: 166
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3e83f79c9de6746801613f0a4bf1fb
+      internalID: 1555482964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_10
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1505
+        width: 167
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f7781bb4614fe418bd968eb17cd6fc
+      internalID: 397778771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1217
+        width: 157
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b564c6b594f0b6448be2c026f426d39a
+      internalID: 260586977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_12
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1217
+        width: 145
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce5b2eee1e01384687811ef02444c21
+      internalID: -1754613526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1217
+        width: 140
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef65d6425d2ff648b0c67a2af48dd12
+      internalID: 242817874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_14
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1217
+        width: 133
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6de5b837da70e4697532b4f8e50abd
+      internalID: 1826889195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_15
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1217
+        width: 129
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98cea7ad270b3942877574f809ade81
+      internalID: -1722179147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_16
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 1217
+        width: 200
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb552fafbf34c443994a11291e06bfb
+      internalID: -1901123002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_17
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1217
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51439c73f871714ba66e57149cc9bd1
+      internalID: 309596230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 875
+        width: 143
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca190b93b044b8b47a34e55483aa1341
+      internalID: 824639044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_19
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 875
+        width: 143
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54dbe471ca56e345bf80fed2256bd36
+      internalID: 1143857588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_20
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 875
+        width: 132
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74ed1d38e20dbc408d4fcf981cfb9ab
+      internalID: -681054901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 640
+        width: 140
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c947f445b7867a459330ecdeba83cd0
+      internalID: 1229475545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_22
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 640
+        width: 215
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e365e0b207a7a674ba342bdea645e1a7
+      internalID: -867157605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_23
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 640
+        width: 179
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bf00b89d97c744fb5c2b188b77e4e0
+      internalID: 1473457979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_24
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 640
+        width: 153
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e00f9082fdb9ed4183190a996e841a5
+      internalID: 2002797630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 355
+        width: 181
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a090591260f7e014dbe6f4cfef0132c2
+      internalID: 2117680651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_26
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 355
+        width: 163
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334b3fb4fe634824b8666aad3b894b51
+      internalID: -82132796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_27
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 355
+        width: 160
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fddc511ce1fc34caa7f79320055b40
+      internalID: 1180901013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_28
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 355
+        width: 176
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b185965762dbc448a17442c5d9cd9c
+      internalID: -461335070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_29
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 355
+        width: 136
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c6a1cdbdc8c134e873f91feb2554c3
+      internalID: -1800802471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_30
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 355
+        width: 158
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103b3f07a296e074183aebfd7bc36c52
+      internalID: -1092348539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_31
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 355
+        width: 209
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85a02ab0edeb834aaac81a4a4803ec4
+      internalID: -1423403201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_32
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 355
+        width: 181
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7228f1b5f5df40047963113eb3f6c381
+      internalID: -1731356452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_33
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 67
+        width: 169
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0226eb375fd66eb49bf83c8a2ef26f3c
+      internalID: -912947030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_34
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 67
+        width: 178
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785e0e726c0d2ac4d88f16bd455d8fb8
+      internalID: 253009456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_White_Normal_35
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 67
+        width: 199
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860519377c5f62649a56eb0916a7f8c8
+      internalID: -740871677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +888,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armadillo_White_Normal_0: -1528970862
+      Armadillo_White_Normal_1: 1053534863
+      Armadillo_White_Normal_10: 397778771
+      Armadillo_White_Normal_11: 260586977
+      Armadillo_White_Normal_12: -1754613526
+      Armadillo_White_Normal_13: 242817874
+      Armadillo_White_Normal_14: 1826889195
+      Armadillo_White_Normal_15: -1722179147
+      Armadillo_White_Normal_16: -1901123002
+      Armadillo_White_Normal_17: 309596230
+      Armadillo_White_Normal_18: 824639044
+      Armadillo_White_Normal_19: 1143857588
+      Armadillo_White_Normal_2: 634519932
+      Armadillo_White_Normal_20: -681054901
+      Armadillo_White_Normal_21: 1229475545
+      Armadillo_White_Normal_22: -867157605
+      Armadillo_White_Normal_23: 1473457979
+      Armadillo_White_Normal_24: 2002797630
+      Armadillo_White_Normal_25: 2117680651
+      Armadillo_White_Normal_26: -82132796
+      Armadillo_White_Normal_27: 1180901013
+      Armadillo_White_Normal_28: -461335070
+      Armadillo_White_Normal_29: -1800802471
+      Armadillo_White_Normal_3: 134770131
+      Armadillo_White_Normal_30: -1092348539
+      Armadillo_White_Normal_31: -1423403201
+      Armadillo_White_Normal_32: -1731356452
+      Armadillo_White_Normal_33: -912947030
+      Armadillo_White_Normal_34: 253009456
+      Armadillo_White_Normal_35: -740871677
+      Armadillo_White_Normal_36: 793590160
+      Armadillo_White_Normal_37: -1344875260
+      Armadillo_White_Normal_38: 1820830563
+      Armadillo_White_Normal_39: 1960377300
+      Armadillo_White_Normal_4: 1747947785
+      Armadillo_White_Normal_40: 485231277
+      Armadillo_White_Normal_41: 1068991356
+      Armadillo_White_Normal_42: 1803308630
+      Armadillo_White_Normal_43: 1034531505
+      Armadillo_White_Normal_44: -185547247
+      Armadillo_White_Normal_45: 1861262119
+      Armadillo_White_Normal_46: -527571004
+      Armadillo_White_Normal_47: -1038211459
+      Armadillo_White_Normal_48: -1574532824
+      Armadillo_White_Normal_49: -156431516
+      Armadillo_White_Normal_5: -1076329135
+      Armadillo_White_Normal_50: -1758974171
+      Armadillo_White_Normal_51: -1699048371
+      Armadillo_White_Normal_52: 633717026
+      Armadillo_White_Normal_53: 1916938368
+      Armadillo_White_Normal_54: -1092803867
+      Armadillo_White_Normal_55: -1774257723
+      Armadillo_White_Normal_56: -343048416
+      Armadillo_White_Normal_57: -1722838014
+      Armadillo_White_Normal_58: 44151136
+      Armadillo_White_Normal_59: 1862239136
+      Armadillo_White_Normal_6: -778008163
+      Armadillo_White_Normal_60: -42882202
+      Armadillo_White_Normal_61: -1006277497
+      Armadillo_White_Normal_62: 583269857
+      Armadillo_White_Normal_63: 606339868
+      Armadillo_White_Normal_7: 307973137
+      Armadillo_White_Normal_8: 1723457541
+      Armadillo_White_Normal_9: 1555482964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

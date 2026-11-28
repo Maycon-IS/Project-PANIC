@@ -93,9 +93,791 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1793
+        width: 234
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a3297e2b04d0347842b68bf3889a3f
+      internalID: 1065226094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1793
+        width: 187
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e6b6306e936b2478ea0f1dc299cd39
+      internalID: 48622583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1793
+        width: 189
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f6ae598f8c5394f8fd85be359de124
+      internalID: 214679311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_3
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1793
+        width: 186
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828bf10df6965da49a8f3ed6ffb469a4
+      internalID: -889801195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_4
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1793
+        width: 187
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52465af19bced9941aaf98acb7dd0810
+      internalID: 169396862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1505
+        width: 190
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d909b258770b1054ab6ffcf91cd19c8b
+      internalID: -10716835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1505
+        width: 183
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e77a7cd6d2db4c817c92a16755329
+      internalID: -1312681676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_7
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1505
+        width: 180
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0326b6ade64df459ca49b7c00c54a3
+      internalID: 811390327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_8
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1505
+        width: 164
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf4df395e55e046968f1c915c6f476
+      internalID: 1491860663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_9
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1505
+        width: 168
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac15d20c67beaa4691c540fef03ab9c
+      internalID: 625108833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_10
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1505
+        width: 171
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204124a3ed4b1284f91951fed43ce8eb
+      internalID: -1872211038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1217
+        width: 155
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bcec5ea7198b4459b7db2cd197416c
+      internalID: -362809782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_12
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1217
+        width: 153
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0966d5ab49ff1c7418f5b37094d9bd9c
+      internalID: -1772995016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_13
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1217
+        width: 143
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835ae42477d2dbd4ea5cc80e48659ad2
+      internalID: 1623902061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_14
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1217
+        width: 136
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea7f35c35fee6443b8a7be9661f7af7
+      internalID: 895661934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_15
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1217
+        width: 132
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c9451294ec4c5458bffb3e4dd6e598
+      internalID: -603641783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_16
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 1216
+        width: 205
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb016e0163c7c6346a152395dfa08c79
+      internalID: 687888441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_17
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 1217
+        width: 143
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc00bb173ff233849bdbfe91b5738a83
+      internalID: 1859254506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 875
+        width: 146
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1898d80d1b02efa4fb2645818a8cd23b
+      internalID: 1079541183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_19
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 875
+        width: 146
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a73e0a696e909d419d2d56a94e66362
+      internalID: -290998499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_20
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 875
+        width: 146
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92347b09423c694680a83621038f59a
+      internalID: -1548115782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 645
+        width: 143
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f8fff11fed40543bef7a6a2cb7e964
+      internalID: 1173039419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_22
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 645
+        width: 217
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa0cccd8a892094f924c1bc053a44e8
+      internalID: -386635404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_23
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 645
+        width: 186
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9a3bfa534a66b4687a77ac9027f883
+      internalID: -1536921720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_24
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 645
+        width: 156
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc289ff1ec300141bff791ccc24dfd1
+      internalID: -1090907862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 355
+        width: 184
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46df2bfaaf2c97c4d9d1b28d47ded7c9
+      internalID: 109874427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_26
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 355
+        width: 169
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6940b0639e253bb4ba45cb0c7a255655
+      internalID: 525644039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_27
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 355
+        width: 169
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ccef82ba5f00447b0f351e626329c4
+      internalID: 1877621304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_28
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 355
+        width: 174
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b65cc125dc12454d8b5ef64046a35e8
+      internalID: -1083428017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_29
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 355
+        width: 143
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb75ab191d0b0e049a8234eab79c67d8
+      internalID: -1630776127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_30
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 356
+        width: 152
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5babfed19d7c5e34f970f0d53c0c9977
+      internalID: 556709544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_31
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 355
+        width: 215
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fddf3739be1b8f4b8746d50cfee586d
+      internalID: -1286296806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_32
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 355
+        width: 178
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788e1c97055a40c4db9c8d9b3a066bb6
+      internalID: -438978391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_33
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 69
+        width: 177
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1011e01192248a4498319f30ffe56942
+      internalID: -1069308602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_34
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 69
+        width: 184
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2df5784037b24d44ae7a3610ed116cf
+      internalID: 335798039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armadillo_Red_Normal_35
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 69
+        width: 197
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81dc7fa4543e7d4092e649c5d2368c5
+      internalID: 517400214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +888,72 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Armadillo_Red_Normal_0: 1065226094
+      Armadillo_Red_Normal_1: 48622583
+      Armadillo_Red_Normal_10: -1872211038
+      Armadillo_Red_Normal_11: -362809782
+      Armadillo_Red_Normal_12: -1772995016
+      Armadillo_Red_Normal_13: 1623902061
+      Armadillo_Red_Normal_14: 895661934
+      Armadillo_Red_Normal_15: -603641783
+      Armadillo_Red_Normal_16: 687888441
+      Armadillo_Red_Normal_17: 1859254506
+      Armadillo_Red_Normal_18: 1079541183
+      Armadillo_Red_Normal_19: -290998499
+      Armadillo_Red_Normal_2: 214679311
+      Armadillo_Red_Normal_20: -1548115782
+      Armadillo_Red_Normal_21: 1173039419
+      Armadillo_Red_Normal_22: -386635404
+      Armadillo_Red_Normal_23: -1536921720
+      Armadillo_Red_Normal_24: -1090907862
+      Armadillo_Red_Normal_25: 109874427
+      Armadillo_Red_Normal_26: 525644039
+      Armadillo_Red_Normal_27: 1877621304
+      Armadillo_Red_Normal_28: -1083428017
+      Armadillo_Red_Normal_29: -1630776127
+      Armadillo_Red_Normal_3: -889801195
+      Armadillo_Red_Normal_30: 556709544
+      Armadillo_Red_Normal_31: -1286296806
+      Armadillo_Red_Normal_32: -438978391
+      Armadillo_Red_Normal_33: -1069308602
+      Armadillo_Red_Normal_34: 335798039
+      Armadillo_Red_Normal_35: 517400214
+      Armadillo_Red_Normal_36: -2079233216
+      Armadillo_Red_Normal_37: -1632088976
+      Armadillo_Red_Normal_38: 679902179
+      Armadillo_Red_Normal_39: -487474116
+      Armadillo_Red_Normal_4: 169396862
+      Armadillo_Red_Normal_40: 389487869
+      Armadillo_Red_Normal_41: -1711280579
+      Armadillo_Red_Normal_42: -1012013584
+      Armadillo_Red_Normal_43: 223508295
+      Armadillo_Red_Normal_44: 1304954491
+      Armadillo_Red_Normal_45: -1106449273
+      Armadillo_Red_Normal_46: 1885825416
+      Armadillo_Red_Normal_47: 1286683297
+      Armadillo_Red_Normal_48: 160401336
+      Armadillo_Red_Normal_49: -561565207
+      Armadillo_Red_Normal_5: -10716835
+      Armadillo_Red_Normal_50: 1991307111
+      Armadillo_Red_Normal_51: 1412252484
+      Armadillo_Red_Normal_52: 1709390597
+      Armadillo_Red_Normal_53: -1937766759
+      Armadillo_Red_Normal_54: 1334909643
+      Armadillo_Red_Normal_55: -1538321271
+      Armadillo_Red_Normal_56: -1167088603
+      Armadillo_Red_Normal_57: 1295569219
+      Armadillo_Red_Normal_58: 1891261014
+      Armadillo_Red_Normal_59: 1073282686
+      Armadillo_Red_Normal_6: -1312681676
+      Armadillo_Red_Normal_60: 659064207
+      Armadillo_Red_Normal_61: -604743143
+      Armadillo_Red_Normal_62: 2065456719
+      Armadillo_Red_Normal_63: -1450623465
+      Armadillo_Red_Normal_64: -432475305
+      Armadillo_Red_Normal_7: 811390327
+      Armadillo_Red_Normal_8: 1491860663
+      Armadillo_Red_Normal_9: 625108833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 214ad81ea6529e54cbab60816dae0801, type: 3}
+  m_Name: OrangeData
+  m_EditorClassIdentifier: 
+  skinID: orange
+  skinName: Orange
+  characterSprite: {fileID: 63757424, guid: a316794db2fa8f143b8f219563fd255b, type: 3}
+  characterColor: {r: 1, g: 1, b: 1, a: 1}
+  animatorController: {fileID: 22100000, guid: bc7e00aef5871314ca6fe8ae28bce672, type: 2}

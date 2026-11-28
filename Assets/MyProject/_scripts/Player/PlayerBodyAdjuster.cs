@@ -51,6 +51,8 @@ public class PlayerBodyAdjuster : MonoBehaviour
     private Vector2 targetColliderSize;
     private Vector2 targetColliderOffset;
 
+    private BodySettings[] defaultSettings;
+
     private BodySettings currentSettings;
     private bool initialized;
 
@@ -94,6 +96,9 @@ public class PlayerBodyAdjuster : MonoBehaviour
         targetColliderOffset = baseColliderOffset;
 
         initialized = true;
+
+        if(settings != null)
+            defaultSettings = settings;
     }
 
     private void LateUpdate()
@@ -122,6 +127,16 @@ public class PlayerBodyAdjuster : MonoBehaviour
 
         ApplyVisual();
         CalculateCollider();
+    }
+
+    public void ApplySkinSettings(BodySettings[] newSettings)
+    {
+        settings = newSettings != null &&
+                   newSettings.Length > 0
+            ? newSettings
+            : defaultSettings;
+
+        currentSettings = null;
     }
 
     private void ApplyVisual()
